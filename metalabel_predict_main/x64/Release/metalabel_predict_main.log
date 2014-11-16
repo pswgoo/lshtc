@@ -1,0 +1,22 @@
+﻿生成启动时间为 2014/11/12 20:06:51。
+     1>项目“F:\projects\lshtc\metalabel_predict_main\metalabel_predict_main.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\projects\lshtc\x64\Release\metalabel_predict_main.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\projects\lshtc\x64\Release\metalabel_predict_main.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\projects\lshtc\x64\Release\metalabel_predict_main.lib" /MACHINE:X64 x64\Release\metalabel_predict_main.obj
+         F:\projects\lshtc\x64\Release\common.lib
+         F:\projects\lshtc\x64\Release\jsoncpp.lib
+         F:\projects\lshtc\x64\Release\medline.lib
+         F:\projects\lshtc\x64\Release\evaluation.lib
+         F:\projects\lshtc\x64\Release\tokenization.lib
+         F:\projects\lshtc\x64\Release\extractfeature.lib
+         F:\projects\lshtc\x64\Release\libsvm.lib
+         F:\projects\lshtc\x64\Release\classifier.lib
+         F:\projects\lshtc\x64\Release\liblinear.lib
+         F:\projects\lshtc\x64\Release\lshtc_lib.lib
+         正在生成代码
+         已完成代码的生成
+         metalabel_predict_main.vcxproj -> F:\projects\lshtc\x64\Release\metalabel_predict_main.exe
+     1>已完成生成项目“F:\projects\lshtc\metalabel_predict_main\metalabel_predict_main.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.63

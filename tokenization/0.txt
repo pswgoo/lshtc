@@ -1,0 +1,2206 @@
+37 
+poli 8 aminoguanyl acid format order self structur interact poli cytidyl acid 
+biochemistri 
+10 
+poli 8 aminoguanyl acid ha neutral solut novel order structur high stabil 
+the 8 amino group permit format three hydrogen bond between two residu along top long axi purin 
+the usual hydrogen bond proton watson crick pair site involv associ 
+the bond scheme ha twofold rotat axi hemiproton n 7 
+poli 8nh2g convert alkalin titrat pk 9.7 quit differ order structur which favor form over rang approxim ph 10 11 
+the bond scheme appear compos planar tetramer arrai guanin residu which 8 amino group doe particip interbas hydrogen bond 
+poli 8nh2g doe interact poli c neutral solut becaus high stabil hemiproton g g self structur 
+titrat alkalin plateau howev permit readi format two strand watson crick helix 
+in contrast monom 8nh2gmp poli 8nh2g doe form tripl helix poli c under ani condit 
+the properti order structur interpret term strong tendenc 8 amino group form third interbas hydrogen bond when possibl prevent high ph 
+
+344 
+degrad myxoviru virion rna period 
+intervirolog 
+3 
+extens degrad rna isol from virion influenza viru which had been oxid sodium m period 
+similarli although lesser extent rna isol from period treat ribonucleoprotein influenza viru also degrad 
+in contrast influenza viru rna first freed from other virion compon degrad period oxid 
+
+1678 
+metal chelat affin chromatographi new approach protein fraction 
+natur 
+0 
+
+2352 
+cooper ligand bind ferrihemoglobin experiment artifact 
+biopolym 
+0 
+
+3203 
+a spectrophotometr fluorimetr studi alkalin transit euglena cytochrom c 552 
+biochemistri 
+9 
+the behavior photosynthet cytochrom c552 upon titrat alkali depend ionic composit medium 
+in water disappear 695 nm band indic displac methionin ligand well remark tryptophan fluorescens enhanc follow singl proton titrat curv pk 10.0 n 1.0 
+the product low spin type protein 
+in salt contain media two success step observ first on complet about ph 10.3 high spin form cytochrom c 552 obtain rel small fluoresc enhanc detect 
+in second step more profound fluorometr chang occur while materi revert it low spin form 
+addit salt alkalin solut cytochrom c 552 water result format 600 nm high spin band concomit quench tryptophan fluoresc 
+the result impli high ph unfold molecul evid onli when low spin product obtain 
+in high spin alkalin form methionin ligand probabl displac from iron coordin hydroxyl ion while low spin alkalin form methionin mai replac lysyl residu cytochrom c 552 protein 
+the result impli lysyl residu avail coordin salt solut higher ph than water 
+
+3878 
+stabil effect dival metal ion virion southern bean mosaic viru 
+virolog 
+0 
+
+4918 
+letter diagnosi renal tumor gamma glutamyl transpeptidas 
+urolog 
+0 
+
+5342 
+inhibit food stimul gastric acid secret cimetidin 
+gut 
+8 
+the effect cimetidin new histamin h2 receptor antagonist gastric acid secret stimul homogenis meal studi six normal volunt us vivo intragastr titrat techniqu 
+the subject were studi twice more than 48 h apart receiv either cimetidin 200 mg placebo random order 
+cimetidin administ either 32 men befor three subject meal three subject significantli inhibit gastric acid secret all subject throughout period studi 96 min after food total acid secret decreas 67 57 respect 
+when drug taken meal absorpt slower mean peak blood level 2 34 mumol l 80 128 min after dose than when administ empti stomach mean peak blood level 5 08 mumol l 48 64 min after dose 
+blood cimetidin concentr correl significantli p less than 0 01 percentag inhibit acid output calcul concentr result 50 inhibit gastric acid secret ic50 1 6 mumol l 
+secret gastrin respons food unaffect cimetidin 
+the result suggest 200 mg cimetidin effect inhibit food stimul acid secret bioavail drug mai affect time dosag relat meal 
+no unwant effect were observ 
+
+6915 
+methanol poison folat defici rat 
+natur 
+0 
+
+7863 
+mitig graft versu host diseas lethal irradi mice graft spleen cell adher glass bead 
+transplant 
+7 
+murin spleen cell were separ basi adher glass bead distinct subpopul differ abil produc acut graft versu host diseas gvhd 
+nonadher cba spleen cell produc acut gvhd 6 10 dai lethal irradi c57bl 6 x cba f1 mice do unfraction spleen cell 
+spleen cell which adher glass bead howev enabl 71 mice surviv without symptomatolog acut gvhd 
+the low prolif respons cell phytohemagglutinin pha correl mitig gvhd seen anim graft fraction 
+prolif cell determin spleen coloni assai vitro agar coloni form assai present fraction cell respons mitogen stimul lipopolysaccharid lp 
+b6cbf1 mice graft cba adher cell exhibit gradual return over period 5 month normal pha lp stimul level shown splenic cell respons mice mitogen 
+surviv mice graft adher cell were chimer determin electrophoret hemoglobin pattern analysi serial bone marrow transplant 
+
+8282 
+editori manag parapneumon effus 
+chest 
+0 
+
+9169 
+calorimetr measur enthalpi chang isotherm helix coil transit poli l ornithin aqueou solut 
+biopolym 
+0 
+
+9971 
+ribos recognit ribonucleas t1 differ spectral bind studi guanosin deoxyguanosin 
+biochemistri 
+9 
+the bind ribonucleas t1 guanosin guo deoxyguanosin dguo studi experi emploi ultraviolet differ spectroscopi ph rang 3 9 0.2 m ionic strength 25 degre c 
+similar experi were also conduct psi carboxymethyl glutam 58 ribonucleas t1 ph 5.0 
+at most ph valu characterist differ spectrum associ constant were obtain 
+the bind constant dguo approxim 550 m 1 did significantli vari ph rang 3.5 9.0 
+the bind constant guo increas from ph 3.5 5.0 constant between ph 5.0 7.0 approxim 3200 m 1 decreas higher ph valu 
+the bind guo dguo ribonucleas t1 could also distinguish term wavelength maxim differ absorb lambdamax between ph 5.0 7.0 
+at higher lower ph valu lambdamax guo approach found fr dguo 
+on other hand valu bind constant approximately6500 m 1 natur differ spectra guo dguo bind lambdamax carboxymethyl glutam 58 ribonucleas t1 ph 5.0 were ident 
+these result suggest discret interact guo 2' hydroxyl group ribonucleas t1 involv lambda carboxyl glutam 58 imidazolium group activ site 
+
+10664 
+in situ dissolut ureter calculu 
+urolog 
+3 
+an obstruct uric acid calculu successfulli manag dissolut situ 
+the method us describ detail 
+perhap applic all case eas procedur make worth consid especi patient high risk open oper intervent 
+
+11414 
+thermophil fungi sun heat soil 
+mycologia 
+0 
+
+12450 
+effect h+ oh cu2+ ag+ amino acid composit candida utili cell chemostat cultur 
+mikrobiologiia 
+3 
+amino acid composit determin cell candida utili vkm y 1668 grow regim chemostat 
+the growth inhibit ph medium copper silver ion glycerol defici control 
+some specif differ have been found amino acid composit yeast depend natur inhibitor 
+
+12845 
+prothrombin complex concentr potenti thrombogen materi clue mechan thrombosi vivo 
+blood 
+7 
+factor affect coagul activ two differ prothrombin complex concentr have been investig us sensit vitro assai develop laboratori 
+on concentr contain substanti amount potenti thrombogen materi while other which deliber fortifi antithrombin iii heparin dure product judg rel nonthrombogen 
+the coagul activ thrombogen concentr ha been partial identifi due larg presenc coagul facto ixa xa 
+neither concentr contain detect thrombin 
+howev after incub calcium variou polyamin larg amount addit coagul materi includ thrombin appear 
+heparin antithrombin iii onli neutral thrombogen materi present thrombogen concentr also inhibit de novo gener coagul enzym dure incub calcium 
+the implic studi prepar prothrombin complex concentr host suscept thrombosi dure clinic us concentr discuss 
+
+13683 
+control breath us extracorpor membran lung 
+anesthesiolog 
+4 
+variou amount carbon dioxid were remov through extracorpor membran lung spontan breath lamb 
+the decreas alveolar ventil proport fraction total carbon dioxid remov membran lung 
+when extracorpor co2 remov approxim co2 product vco2 alveolar ventil almost ceas 
+pulmonari ventil can control extracorpor carbon dioxid remov 
+
+14057 
+sulphasalazin asymptomat crohn diseas a multicentr trial 
+gut 
+3 
+dure six year period 43 patient crohn diseas were includ doubl blind control trial sulphasalazin given on year possibl treatment reduc relaps rate after resect asymptomat patient establish diseas 
+no trend favour sulphasalazin over control group observ 
+the difficulti trial due small number patient enter from nine hospit vari natur diseas high incid complic intraperiton abscess format discuss 
+
+14715 
+factor influenc stabil esr ii signal mn water split complex chloroplast 
+biofizika 
+0 
+
+15589 
+effect neurotoxin veratridin sea anemon toxin tetrodotoxin transmitt accumul releas nerv termin vitro 
+biochemistri 
+7 
+two tree toxic compound us work veratridin sea anemon toxin provok neurotransmitt releas from synaptosom third on tetrodotoxin prevent action both veratridin sea anemon toxin 
+the half maximum effect veratridin sea anemon toxin action synaptosom k0.5 10 0.02 micronm respect 
+although veratridin sea anemon toxin similarli provok neurotransmitt releas act differ receptor structur membran 
+tetrodotoxin antagon effect both veratridin sea anemon toxin 
+the half maximum inhibitori concentr tetrodotoxin k0.5 4 nm veratridin 7.9 nm atxii 
+it veri similar dissoci constant measur from direct bind experi radioact toxin 
+the analysi antagonist action offer easi vitro assai tetrodotoxin interact it receptor 
+
+16381 
+doe calcium ion bind control plant viru disassembl 
+virolog 
+0 
+
+17084 
+effect pyridoxin growth morri hepatoma no 7288ctc enzym activ 
+oncolog 
+10 
+the effect s lack dietari pyridoxin px growth morri hepatoma no 
+7288ctc studi 
+buffalo strain femal rat were fed diet lack px 
+pair fed control were fed same diet px ad 
+anim were inocul no 
+7288ctc hepatoma cell 21 dai were sacrif 16 dai later 
+host liver tumor were remov weight record activ tyrosin aminotransferas tat l tyrosin 2 oxoglutar aminotransferas ec 2.6.1.5 determin both host liver hepatoma 
+the averag weight 30 hepatoma grown pair fed control rat 11.61 + 1.5 g while averag weight same number hepatoma grown anim fed px free diet 4.73 + 0.7 g p less than 0.001 
+further tat specif activ level were 39 32 higher host liver tumor from defici anim respect 
+the result show avail dietari pyridoxin stimul growth hepatoma and addit exercis type control over express tat activ 
+
+17845 
+detect gastroesophag reflux pediatr ag patient esophag intralumin ph probe measur tuttl test 
+pediatr 
+7 
+the esophag intralumin ph probe test tuttl test us 24 pediatr ag patient who had symptom gastroesophag ge reflux determin it sensit detect gastric acid reflux document it us prognost indic 
+eight children had posit tuttl test 
+six patient fail trial medic manag requir surgeri control symptom 
+none patient had ge reflux esophagram 
+onli on 16 children neg test requir surgeri 
+thi patient also did have ge reflux esophagram 
+the tuttl test should includ diagnost evalu pediatr patient clinic present ge reflux 
+
+18819 
+fetal suppressor cell their influenc cell mediat immun respons 
+transplant 
+5 
+the cell mediat immun respons significantli reduc fetal newborn mice furthermor spleen cell anim abl suppress immun respons adult lymphocyt varieti situat 
+newborn mice sensit picryl chlorid within 24 hr after birth fail develop contact sensit reaction when test sever week later fetal mice do develop graft versu host reaction when given inject parent lymphocyt 
+spleen cell fetal newborn mice abl suppress passiv transfer contact sensit local graft versu host reaction elicit immun parent cell f1 hybrid mice reduc significantli sever graft versu host reaction mortal rate cyclophosphamid treat f1 recipi 
+in experi were thymu cell either fetal newborn mice found inhibitori 
+the possibl mechan action biolog signific fetal suppressor cell discuss 
+
+19055 
+thermal unfold transit ribonucleas a measur 2' cmp bind 
+biochemistri 
+4 
+we report approach problem detect characteris intermedi unfold ribonucleas a 
+two distinct properti protein compar equilibrium within unfold transit zone 1 physic properti protein absorb buri tyrosin residu 2 function properti abil bind specif ligand 2' cmp 
+a direct comparison two properti made within ph 5.8 transit zone indirect comparison made us stop flow instrument sampl rapidli equilibrium properti ph 2.0 transit 
+at both ph 2.0 ph 5.8 result indic intermedi fold which have physic properti nativ enzym which have lost abil bind specif ligand 
+
+19708 
+müller cell localis glutamin synthetas rat retina 
+natur 
+0 
+
+20389 
+endocard complic ulcer coliti 
+gastroenterolog 
+0 
+
+20985 
+gener black foami film protein 
+biofizika 
+0 
+
+22046 
+carbon dioxid govern oxygen affin crocodil blood 
+natur 
+0 
+
+23145 
+mechan rate equat dissoci system 
+biochemistri 
+7 
+the result present previou paper boeker e.a 
+1978 biochemistri 17 preced paper issu indic dissoci decam arginin decarboxylas escherichia coli b enhanc na+ retard h+ 
+in system substanc which increas rate dissoci can treat kinet either substrat activ substanc which retard dissoci can treat product inhibitor 
+in addit event need dissoci can occur order random sequenc dissoci itself from decam five dimer can sequenti concert process 
+in order provid framework experiment result mechan dissoci arginin decarboxylas take all factor account describ 
+in addit shown usual method steadi state kinet can appli system when true initi rate measur rate equat present each mechan 
+the result can us ani dissoci three more subunit describ dissoci dimer under certain condit 
+
+23604 
+intestin influenza replic character influenza virus duck 
+virolog 
+0 
+
+24280 
+interact gastric blood flow barrier breaker hydrogen ion back diffus dure ulcer format rat 
+surgeri 
+4 
+a rat gastric chamber prepar us determin interrel between h+ back diffus mucos blood flow area mucosa treat bile salt ulcer format 
+the rate h+ back diffus found depend both mucos blood flow area mucosa expos bile salt 
+it conclud that although h+ back diffus conveni measur barrier permeabl under condit normal mucos blood flow dure mucos ischemia paramet fail reflect permeabl becaus decreas mucos clearanc h+ 
+these find would explain appar controversi wherebi ulcer occur under shock condit absenc appar h+ back diffus 
+
+25224 
+ontogenet switch over bacillu subtili i the characterist mutant condition resist catabol repress 
+genetika 
+0 
+
+25829 
+intestin phase gastric secret patient duoden ulcer 
+gut 
+8 
+in 10 healthi subject 10 duoden ulcer patient intestin phase gastric acid secret studi intraduoden infus 10 liver extract meal ph 7 400 ml h three hour 
+a gastroduoden doubl lumen tube two balloon us block pyloru prevent duodenogastr reflux 
+gastric acid respons duoden meal liver extract reach peak end first hour infus extract follow rel well sustain plateau 
+when figur normalis percentag peak respons pentagastrin about 45 healthi subject 63 duoden ulcer patient 
+serum gastrin concentr increas significantli dure duoden meal liver extract onli duoden ulcer patient healthi subject 
+the combin duoden meal liver extract pentagastrin infus result significantli greater increas acid output duoden ulcer patient than healthi control 
+duoden perfus liver extract meal which ph gradual decreas caus ph depend reduct acid output serum gastrin both duoden ulcer patient healthi subject 
+thi studi show intestin phase man result potent gastric acid stimul which ph depend greatli augment pentagastrin more vigor duoden ulcer patient than healthi control 
+
+26856 
+origin adifferenti variant streptomyc roseoflavu submerg cultur 
+mikrobiologiia 
+5 
+adifferenti nocardia like variant nv streptomyc roseoflavu var 
+roseofungini similar cultur characterist variant 1 68 describ elsewher nikitina 1968 kalakoutskii a 
+nikitina 1976 can obtain onli cours growth parent cultur solid medium contain fructos form secondari coloni also dure submerg cultiv stir 
+interrupt aerat do affect accumul cell variant medium 
+a direct correl ha been establish between amount biomass number nv coloni when submerg mycelium inocul solid medium 
+
+27237 
+natur electron acceptor group peptid molecula deriv i ethyl ester amid glycylglycin 
+biofizika 
+0 
+
+28142 
+13c nuclear magnet reson studi ci tran isomer x pro pro tripeptid 
+biochemistri 
+6 
+13c nuclear magnet reson ha been us character quantit ci tran isomer about both peptid bond tripeptid ser pro pro arg pro pro 
+detail ph titrat data indic configur about both peptid bond close link titrat termin carboxyl group and lesser extent titrat termin amino group 
+the pro2 c 3 reson ha been found particularli us interpret due it sensit isomer about both peptid bond 
+analysi probabl tran tran cic ci ci tran tran ci isom aqueou solut indic stabil decreas order given 
+similar isomer behavior two peptid indic side chain interact involv first residu have veri littl effect observ ci tran ratio 
+the sensit ci tran ratio titrat termin amino group most readili explain basi indirect effect carbonyl carbonyl repuls 
+
+28600 
+megalourethra 
+urolog 
+5 
+two case megalourethra present ninth tenth case document literatur 
+both patient exhibit mesoderm abnorm which justifi categor among minor form prune belli syndrom 
+on patient youngest have undergon surgic correct present azotemia dilat posterior urethra megacysti megauret 
+the second patient incomplet scaphoid form megalourethra also exhibit undescend testi correct orchiopexi time urethoplasti 
+in all instanc goal treatment preserv renal function subsequ function anatom reconstruct urinari tract 
+
+29659 
+critic ioniz state reaction catalyz triosephosph isomeras 
+biochemistri 
+5 
+to allow detail interpret ph depend steadi state paramet reaction catalyz triosephosph isomeras three kind experi have been perform 
+first valu kcat km enzym catalyz isomer phosphon analogu d glyceraldehyd 3 phosphat 2 hydroxi 4 phosphonobutyraldehyd ha been shown titrat appar pka 7.5 which close phosphon second ioniz constant 
+secondli sulfat ester analogu dihydroxyaceton phosphat dihydroxyaceton sulfat which exist onli monoanion over ph rang interest ha been shown bind detect enzym 
+thirdli isotop discrimin experi ph 5.2 ha been compar similar investig ph 7.6 
+the result togeth demonstr both enzym substrat ioniz control reaction rate ph rang 5 8 
+
+30475 
+phosphoru 31 nuclear magnet reson studi activ proton transloc chromaffin granul 
+biochemistri 
+11 
+atp hydrolysi proton transloc chromaffin granul were follow us 31p nuclear magnet reson 
+the intragranular ph affect reson frequenc gamma phosphat granular atp 
+by measur frequenc vs 
+ph solut which simul intragranular matrix mai calibr give quantit ph measur 
+the ph rest granul 5.65 + 0.15 
+thi drop 0.4 0.5 ph unit when atp ad extern proton activ pump granul 
+becaus differ composit ph intern extern solut reson intern extern nucleotid pi can distinguish 
+consequ atp hydrolysi chang intern ph mai observ simultan continu singl sampl chromaffin granul 
+from measur buffer capac reconstitut intragranular solut ph chang were convert absolut number proton transloc 
+the net proton flux proton transloc atp hydrolyz about 1.0 immedi after extern atp addit fell toward zero ph gradient increas new steadi state 
+these 31p nmr result agre intragranular ph measur determin from methylamin distribut h+ atp stoichiometri calcul from ph chang observ extern medium 
+
+31028 
+the self assembl papaya mosaic viru 
+virolog 
+0 
+
+31901 
+kinet analysi light induc ph chang bacteriorhodopsin contain particl from halobacterium halobium 
+biochemistri 
+0 
+
+33338 
+substanc p caus direct depolaris neuron guinea pig interpeduncular nucleu vitro 
+natur 
+0 
+
+33867 
+metabol third compon complement acut type b hepat hb antigen posit glomerulonephr polyarter nodosum hb antigen posit neg chronic activ liver diseas 
+gastroenterolog 
+0 
+
+34431 
+near heme histidin residu deoxi oxymyoglobin 
+biochemistri 
+9 
+proton nmr titrat curv histidin cepsilon h reson deoxi oxi form human hors sperm whale myoglobin mb were determin compar result met azid form 
+on extra titrat reson h 8 observ each deoxi mb compar correspond met mb further extra reson h 9 observ oxi mb form 
+these reson correspond two addit reson previous describ azid mb hay m hagenmai h amp cohen j 
+s 
+1975 j 
+biol 
+chem 
+250 7461 7472 
+thi new evid prompt us reassign reson near heme histidin residu 
+
+35218 
+electrostat effect hemoglobin bohr effect ionic strength depend individu group 
+biochemistri 
+8 
+the electrostat treatment appli preced paper issu matthew j 
+b hanania g.i.h amp gurd f.r.n 
+1979 biochemistri preced paper issu titrat behavior individu group human deoxyhemoglobin oxyhemoglobin appli comput alkalin bohr effect variou valu ionic strength 
+the enhanc proton bind deoxyhemoglobin ph rang 6 9 account ionic strength 0.01 m effect uniqu charg distribut ioniz group two quaternari state 
+at ionic strength 0.10 m effect 2 4 bound anion had consid addit deoxyhemoglobin charg configur 
+at higher ionic strength 10 group per tetram contribut bohr effect wherea 28 group were contributori lower ionic strength 
+the ionic strength depend individu group two tetramer structur well alpha chain monom explain term electrostat treatment 
+thi examin show differ electrostat behavior deoxi oxyhemoglobin follow from particular dissymmetri configur respect charg static solvent access 
+
+35754 
+agonist regul alpha adrenerg receptor number 
+natur 
+0 
+
+36219 
+serum enzym colorect cancer 
+cancer 
+9 
+a studi valu serum enzym 184 patient colorect cancer ha been perform 
+the enzym studi were gamma glutamyltransferas gammagt alkalin phosphatas ap lactat dehydrogenas ldh 5' nucleotidas 5' nt glutathion reductas gr alanin aspart transaminas 
+in patient without liver metastas elev enzym level were found 11 55 preoper 
+5' nt show least number elev activ while gammagt activ were increas 29 ldh 55 
+the percentag elev enzym level rose significantli earli postop period 
+patient liver metastas show increas enzym activ 40 60 preoper gammagt most sensit indic 
+increas enzym activ relat degre liver involv secondari tumor 
+with extens liver metastas gammagt level were increas 82 
+it conclud serum enzym limit valu preoper detect liver metastas particularli when tumor involv liver small 
+
+36808 
+postop analgesia 
+anaesthesia 
+5 
+postop analgesia both drug region techniqu review 
+in unit kingdom last 25 year more ha been littl advanc either front 
+some margin improv regard drug might brought about better educ both doctor nurs better patient contact 
+extradur analgesia intercost block do offer complet solut though judici increas us certainli former might benefici 
+the problem await radic new approach 
+
+37622 
+linear coloni count mous spleen bone marrow 
+tsitologiia 
+0 
+
+38178 
+azathioprin relat pancreat patient crohn diseas 
+gastroenterolog 
+4 
+pancreat develop 6 patient nation cooper crohn diseas studi 
+in five diagnosi confirm elev level seum amylas lipas 
+all case were 113 patient who receiv azathioprin occur within first 21 dai treatment 
+thi incid pancreat significantli greater than patient treat sulfasalazin prednison placebo p less than 0.01 
+
+38835 
+analysi molecular speci chick oviduct progesteron receptor us isoelectr focus 
+biochemistri 
+12 
+condit describ prepar isoelectr focus flat bed sephadex progesteron receptor from chick oviduct 
+the method allow fraction receptor two molecular speci on focus pi 6 other pi 7 good purif recoveri 
+the pi 6 pi 7 receptor speci were purifi 2 26 fold respect 
+the assai focus fraction charcoal bind method provid accur identif quantit 3h progesteron receptor 
+the method reproduc recoveri quantit resolut two receptor speci 
+the receptor appar pi 6 sediment approxim 4 s linear sucros gradient while receptor appar pi 7 sediment approxim 3.5 s 
+on basi sediment valu elut pattern from diethylaminoethyl deae chromatographi pi 6 compon equival b receptor speci pi 7 compon equival a receptor speci describ previous schrader w t 7 o'mallei b 
+w 
+1972 j 
+biol 
+chem 
+241 51 59 
+
+39479 
+echocardiograph find patient aortiti syndrom 
+angiolog 
+4 
+echocardiographi perform 18 patient aortiti syndrom 20 ag match normal volunt 
+the aortic root dimens aortic dimens level sinotubular ridg aortic arch dimens left ventricular intern dimens left atrial dimens interventricular septal thick left ventricular posterior wall thick were measur 
+all measur except left atrial dimens were significantli greater patient aortiti syndrom than control subject 
+we conclud 1 patient aortiti syndrom mai have enlarg narrow aorta dilat left ventricl left atrium thicken interventricular septum left ventricular posterior wall 2 incid degre abnorm depend presenc complic aortic regurgit arteri hypertens 3 m mode well cross section echocardiographi plai import role assess aorta heart aortiti syndrom 
+
+40592 
+electrostat stabil myoglobin ph depend sum electrostat contribut 
+biochemistri 
+0 
+
+41595 
+model effect photosynthet enhanc chromat transit 
+biofizika 
+3 
+a simpl method propos analys which explain characterist manifest enchanc effect 2nd emerson effect chromat transient effect blink effect 
+the model base hypothesi concern atp nadp concentr ratio chang fall light wavelength 
+the model suggest reflect behaviour reduct pentosophosph cycl calvin cycl under low illumin intens when photosynthesi rate determin onli atp nadp.h concentr form cours differ photochem reaction 
+
+42999 
+immunospecif deplet graft versu host reactiv lymphocyt us sensit syngen initi t lymphocyt 
+transplant 
+6 
+we investig model lethal graft versu host gvh reaction aim deplet donor spleen cell immunospecif gvh reactiv lymphocyt 
+in previou studi recruit effector t lymphocyt sensit syngen initi t lymphocyt itl we found us local gvh reaction precursor specif gvh reactiv lymphocyt were recruit drain lymph node 
+in studi adult f1 hybrid mice were lethal irradi reconstitut 2 x 10 6 syngen bone marrow cell vari number spleen cell from parent strain mice 
+to deplet donor spleen cell gvh reactiv lymphocyt parent strain mice were given inject hind footpad 6 dai earlier syngen itl had been sensit vitro against allogen fibroblast 
+we found inject itl sensit against relev allogen antigen led mark decreas specif gvh potenti donor spleen cell 
+these find show gvh reactiv lymphocyt can deplet select activ recruit particular lymph node us syngen itl 
+
+45207 
+peptid profus 
+natur 
+0 
+
+45916 
+treatment pulmonari emboli vena caval interrupt anticoagul 
+geriatr 
+0 
+
+46016 
+vincent zachari cope 
+lancet 
+0 
+
+46048 
+leukaemia lymphoma patient interlink prior social contact 
+lancet 
+6 
+patient either leukemia lymphoma were ask had close person associ other patient befor onset diseas 
+iiniti interview indic sever patient could interlink social cluster 
+tumour registri record were us contact each patient or surviv rel diagnos dure year 1964 73 three area west virginia 
+close person associ anted onset diseas 1 both individu each linkag pair were detect 14 23 61 14 22 68 6 8 75 patient from three area dure ten year period 
+in addit among 28 randomli select patient hodgkin diseas from variou part unit state 10 36 had direct indirect close person associ 17 other patient leukemia lymphoma 
+patient leukemia lymphoma frequent interlink prior close person associ other patient diseas 
+
+46080 
+letter screen hypertens 
+lancet 
+0 
+
+46113 
+a new program investig adult human skelet muscl grown aneur tissu cultur 
+neurolog 
+5 
+with our new explant reexplant techniqu abund growth matur human muscl long term tissu cultur achieved,and sandwich techniqu sever histochem reaction were obtain serial cross section cultur fiber 
+an advanc degre matur lack differenti reciproc stain fiber type demonstr 
+for electron microscop electronmicroscop histochem studi method develop which embed fiber greatest potenti interest were identifi light microscopi punch out our special design hollow drill 
+thi select procedur critic import when goal studi cultur diseas human muscl 1 success stage develop 2 certain structur chang often occur onli some fiber onli certain region those fiber 
+the electronmicroscop histochem appear develop cultur muscl fiber correl well fresh frozen light microscop histochem cross section longitudin whole prepar similar fiber 
+
+46350 
+letter anticoagul control immunosuppress glomerulonephr 
+lancet 
+0 
+
+46382 
+letter white cell uric acid alcohol 
+lancet 
+0 
+
+46414 
+letter human placent lactogen screen multipl pregnanc 
+lancet 
+0 
+
+46446 
+effect continu posit airwai pressur breath pattern infant respiratori distress syndrom 
+lancet 
+6 
+the effect continu posit airwai pressur c.p.a.p breath pattern ten newborn infant respiratori distress syndrom r.d. ha been studi us imped pneumograph arteri oxygen improv respir previous disorgan becam regular both rate depth 
+grunt usual ceas within 15 minut start c.p.a.p also averag 30 percent increas respiratori rate 
+the rapid which breath pattern chang suggest reflex mechan 
+sudden reduct airwai pressur were frequent follow apnoea regular breath restart reintroduct c.p.a.p 
+these observ suggest c.p.p.a 
+provid respiratori drive babi r.d. possibl mediat through here breuer inflat reflex 
+
+46478 
+letter spontan cytotox activ test human lymphocyt function 
+lancet 
+0 
+
+46510 
+granulocyt transfus treatment infect patient acut leukaemia aplast anaemia 
+lancet 
+16 
+by us continu flow blood cell separ 137 bag granulocyt rich plasma were obtain from normal donor 59 bag patient chronic granulocyt leukaemia c.g.l 78 bag 
+eighti nine cours granulocyt transfus therapi consist 1 more bag were administ forti on abo compat patient acut leukaemia aplast anaemia who had definit probabl infect had fail respond antibiot 
+the fever resolv after 67 cours transfus two more bag after onli 24 transfus singl bag granulocyt p less than 0 01 result suggest form treatment gener effect 
+granulocyt from c.g.l 
+normal donor were equal effect although transfus reaction were common after c.g.l 
+cell 33 versu 12 respect p less than 0 05 
+c.g.l 
+graft probabl graft versu host diseas occur three recipi unirradi c.g.l 
+cell 
+recipi normal cell whose fever resolv receiv averag four time mani granulocyt per sq.m 
+those fever did respond 
+no differ found when c.g.l 
+cell were us 
+the fever more like resolv recipi establish clinic probabl bacteri fungal infect than those fever uncertain caus 
+fever less like resolv recipi peripher blood granulocyt count befor transfus greater than 1000 per mul 
+it conclud granulocyt transfus therapi valuabl advanc manag infect neutropen patient 
+
+46542 
+letter graft versu host atherosclerosi 
+lancet 
+0 
+
+46574 
+letter antinuclear factor pregnant women 
+lancet 
+0 
+
+46794 
+three variant conceal bigemini 
+circul 
+8 
+long electrocardiograph strip were analyz from five patient who exhibit period typic conceal bigemini i 
+e recurr unifoc extrasystol which were separ from on anoth odd number normal conduct sinu beat 
+howev each patient were period which on three differ variant conceal bigemini observ 
+three patient displai even number variant i 
+e were larg number consecut extrasystol which were separ exclus preponderantli even rather than odd number sinu beat 
+on other patient exhibit interpol extrasystol variant those interectop interv which were initi interpol extrasystol contain even number sinu beat wherea all other interectop interv contain odd number 
+in fifth patient distribut number sinu beat separ extrasystol suggest period fluctuat between classic form conceal bigemini conceal trigemini i 
+e combin bigemini trigemini variant 
+
+46976 
+letter dissemin intravascular coagul sever falciparum malaria 
+lancet 
+0 
+
+47008 
+letter unsuit blood donor popul genet 
+lancet 
+0 
+
+47040 
+letter heterozygot advantag cystic fibrosi 
+lancet 
+0 
+
+47072 
+letter erythroblast synartesi 
+lancet 
+0 
+
+47104 
+letter birth defect oestrogen progesteron pregnanc 
+lancet 
+0 
+
+47136 
+letter the toxic plutonium 
+lancet 
+0 
+
+47417 
+rubella specif serum nasopharyg immunoglobulin respons follow natur acquir vaccin induc infect prolong persist viru specif igm 
+lancet 
+8 
+rubella specif immunoglobulin respons sera nasopharyng secret were compar group adult femal who had experienc natur acquir rubella infect induc cendehil hpv77.de 5 ra27 3 subcutan intranas to 336 vaccin 
+serum igg iga nasopharyng iga respons after vaccin ra27 3 intranas most close resembl those induc natur acquir infect 
+howev other vaccin fail induc persist local iga respons 
+level local antibodi induc hpv77.de 5 were especi poor 
+viru specif igm detect prolong period 
+the highest level most persist respons follow vaccin hpv77.de 5 four five volunt still have rubella specif igm 1 year 
+viru specif igm persist 6 month seventeen twenti five 68 year nine twenti four 38 vaccine 
+it still present four nine 44 natur infect patient year 
+
+47449 
+letter blood lead analys 
+lancet 
+0 
+
+47481 
+neuropsycholog dysfunct children chronic low level lead absorpt 
+lancet 
+17 
+to investig relat between low level absorpt neuropsycholog function blind evalu were under taken forti six symptom free children ag 3 15 year blood lead concentr 40 68 mug 
+per 100 ml 
+mean 48 mug 
+per 100 ml. seventi eight ethnic socioeconom similar control level greater than mug 
+per 100 ml 
+mean 27 mug 
+per 100 ml 
+all children live within 6 6 km 
+larg lead emit smelter mani case resid had been lifelong 
+mean ag lead group 8 3 year control 9 3 
+test wechsler intellig scale schoolchildren preschool children w.i.s.c 
+w.p.p.s.i. show ag adjust perform i.q 
+significantli decreas group higher lead level mean score w.i.s.c 
+plu w.p.p.s.i 95 v 
+103 
+children all ag lead group also had signific slow finger wrist tap test 
+full scale i.q verbal i.q behaviour and hyperact rate did not differ 
+
+47513 
+letter hairi cell cultur 
+lancet 
+0 
+
+47545 
+editori drug interact 
+lancet 
+0 
+
+47577 
+letter reserpin chemic carcinogenesi 
+lancet 
+0 
+
+47659 
+toxic relai i gener principl new method assess toxic addivit anim feed 
+toxicolog 
+8 
+chemic substanc ad variou purpos feed farm rear anim mai enter bodi anim 
+thi mai lead persist food offer human consumpt residu which mai potenti toxic under condit repeat absorpt over greater part life span 
+the evalu safeti residu man pose complex problem 
+their ideal solut demand veri often number care experi 
+the methodolog call toxic relai consist essenti submiss anim feed itself which like contain mosaic residu long term test laboratori anim 
+provid satisfactori safeti factor can appli methodolog can contribut inform permittinga conclus regard acceptabl even provision feed addit us which envisag 
+in addit methodolog enabl provis result constitut criterion reject addit under test 
+for reason appear us appropri procedur take it place among test undertaken toxicolog evalu additv feed farm rear anim 
+
+47957 
+editori psycholog medic educ 
+lancet 
+0 
+
+47989 
+letter role catecholamin arrhythmia after acut myocardi infarct 
+lancet 
+0 
+
+48021 
+letter fat mobilis platelet aggreg 
+lancet 
+0 
+
+48053 
+control prospect studi effect liver function multipl exposur halothan 
+lancet 
+10 
+patient who had receiv halothan within periof on year who requir anoth anaesthet were alloc random given halothan control anaesthet control be fiben us halothan free apparatu 
+there were 76 patient entri each group 
+serum glutam oxaloacet transaminas s.g.o.t level were measur befor anaesthet serial postop two three week 
+the s.g.o.t 
+level halothan group were significantli higher than control 
+high level were confin patient who had had less than four previou halothan anaesthet increas abov normal remaind control be rate 
+1 patient halothan group had s.g.o.t 
+440 i.u 
+per litr hepatocellular necrosi liver biopsi 
+2 patient halothan group whose s.g.o.t. rose more than twice normal show similar reaction re exposur halothan although had shown reaction interven control anaesthet 
+
+48085 
+letter statu lithium patient blood donor 
+lancet 
+0 
+
+48117 
+vernon udal 
+lancet 
+0 
+
+48149 
+letter hairi cell 
+lancet 
+0 
+
+48202 
+histon fix cytolog prepar chines hamster chromosom demonstr immunofluoresc 
+natur 
+0 
+
+48612 
+thymosin induc reduct null cell peripher blood lymphocyt patient system lupu erythematosu 
+lancet 
+6 
+although thymosin thymic hormon ha been shown restor cellular immun nzb nzw mice it effect human system lupu erythematosu s.l.e other auto immun disord ha been test 
+the present studi show first time proport null cell peripher blood lymphocyt patient activ s.l.e 
+significantli decreas after in vitro thymosin treatment 
+thymosin ha effect percentag t cell b cell null cell peripher blood lymphocyt from normal control patient inact s.l.e 
+activ rheumatoid arthriti 
+these find suggest thymosin mai plai import part pathogenesi treatment condit 
+
+48644 
+letter hygien babies' incub 
+lancet 
+0 
+
+48676 
+nucleosid phosphorylas defici child sever defect t cell immun normal b cell immun 
+lancet 
+11 
+a 5 year old girl histori recurr infect anaemia ha measur purin nucleosid phosphorylas n.p activ her red blood cell 
+her serum immunoglobulin level normal her antibodi respons thymu depend independ antigen 
+howev she ha sever lymphopenia pronounc depress lymphocyt respons mitogen allogen cell stimuli greatli decreas t cell rosett format 
+her parent second cousin red cell contain less than half normal level n.p 
+activ 
+thei also share unusu n.p 
+isozym pattern indic molecular hybridis between catalyt activ inact subunit which strongli support assumpt heterozyg daughter homozyg silent allel n.p 
+gene locu 
+inherit defici adenosin deaminas enzym catalys reaction onli on metabol step awai from n.p known caus immunodefici 
+it therefor veri like patient lack demonstr n.p 
+activ respons her syndrom 
+
+48708 
+letter moorgat tube disast disput alcohol find 
+lancet 
+0 
+
+48740 
+surgic treatment typhoid perfor 
+lancet 
+2 
+the treatment perfor ileum 50 case typhoid fever review 
+becaus risk reperfor after surgic closur perfor wedg excis ulcer singl area diseas bowel segment resect ileum ileum more extens affect recommend 
+
+48772 
+cuthbert lesli cope 
+lancet 
+0 
+
+48804 
+letter bone marrow cell resist chloramphenicol chloramphenicol induc aplast anaemia 
+lancet 
+0 
+
+48836 
+us co trimoxazol chronic renal failur 
+lancet 
+4 
+twenti patient chronic renal failur either urinari respiratori tract infect were treat co trimoxazol 
+seventeen patient show deterior renal function while receiv co trimoxazol 
+deterior renal function dure treatment other three patient due factor other than administr drug 
+it conclud co trimoxazol can us patient chronic renal failur provid dose adjust accord degre renal failur 
+
+48868 
+letter lithium calcium phosphat 
+lancet 
+0 
+
+48900 
+surviv after 40 minut submers without cerebr sequea 
+lancet 
+6 
+cardiopulmonari resuscit rewarm were success 5 year old boi who had been submerg 40 minut ic cold fresh water 
+sever metabol acidosi correct intraven infus sodium bicarbon solut befor spontan circul could re establish 
+fulmin pulmonari oedema develop after re establish spontan circul 
+thi effici revers posit end expiratori pressur ventil 
+dure 2 dai treatment respiratori patient gradual regain conscious endotrach tube remov patient immedi start talk intellig 
+the patient went through period slow cerebr motor dysfunct recov rapidli examin 13 month after accid all find were normal 
+
+48932 
+letter bowi dick test autoclav 
+lancet 
+0 
+
+48964 
+letter zinc absorpt acrodermat enteropathica hypogeusia hyposmia 
+lancet 
+0 
+
+49073 
+cush syndrom it complex care 
+rn 
+0 
+
+49476 
+relat renal growth diabet glomerulosclerosi 
+lancet 
+2 
+in diabet mellitu abnorm quantiit glycoprotein mai form basement membran glomerulu both renal function size mai increas 
+it suggest chang quit differ potenti signific have common origin increas rate uridin triphosph synthesi result from hyperglycemia 
+
+49508 
+letter vitamin d metabol chronic renal failur 
+lancet 
+0 
+
+49540 
+letter role catecholamin arrhythmia after acut myocardi infarct 
+lancet 
+0 
+
+49572 
+the hazard bulk oxygen deliveri system 
+lancet 
+10 
+mani hospit throughout world obtain oxygen from suppli bulk liquid oxygen which deliv throughout hospit via pipelin 
+an incid which through seri malfunct danger high pressur develop hospit oxygen pipelin describ 
+the oxygen deliveri systen describ lack relief valv vent excess pressur 
+in north america relief valv requir all oxygen deliveri system 
+an alarm system also requir which detect rise pipelin pressur 
+regul u.k 
+do provid pressur relief valv liquid oxygen pipelin system 
+in u.k 
+also regul alarm warn high pipelin pressur 
+high pressur accid real threat patient hospit staff unless proper safeguard built oxygen deliveri system 
+
+49604 
+editori epitaph global malaria erad 
+lancet 
+0 
+
+49636 
+letter localis human gene galactos 1 phosphat uridyltransferas 
+lancet 
+0 
+
+49668 
+letter d penicillamin induc nephropathi 
+lancet 
+0 
+
+49700 
+editori haemorheolog blood flow venou thrombosi 
+lancet 
+0 
+
+49732 
+letter doppler ultrasound fetal hazard 
+lancet 
+0 
+
+49764 
+letter futur chemic patholog 
+lancet 
+0 
+
+49796 
+electrolyt disturb beer drinker a specif hypo osmol syndrom 
+lancet 
+6 
+a syndrom describ which affect subject whose consumpt beer consider who take littl ordinari food 
+the symptom includ fatigu dizzi muscular weak biochem chang hyponatraemia hypokalaemia 
+the disord rapidli resolv stai hospit 
+beer poor na 1 2 meq 
+per litr 
+consequ patients' intak na low product urea veri low 
+
+49828 
+letter sulphon resist leprosi 
+lancet 
+0 
+
+50232 
+interact antiepilept drug 
+epilepsia 
+12 
+sever interact involv antiepilept drug base chang rate metabol elimin concomit rise fall plasma level 
+thu phenobarbit gener induc product dph metabol enzym it presenc inhibit action enzym 
+the net result depend upon balanc between factor individu patient 
+either declin rise chang dph plasma level mai occur after onset administr phenobarbit 
+drug mai caus elev dph plasma level includ disulfiram sulthiam bishydroxycoumarin chloramphenicol phenyramidol benzodiazepin sulfamethizol isoniazid 
+isoniazid ha been shown experiment strong inhibitor dph metabol 
+the extent dph plasma level elev inh relat genet make up individu patient 
+the highest frequent toxic dph plasma level were seen veri slow inh inactiv 
+the incid clinic signific interact high most drug combin mark chang antiepilept drug level occur onli appar suscept individu 
+the effect interact necessarili detriment elev low ineffect level mai improv seizur control 
+a rise toxic level rang requir reduct dose primari drug elimin interf drug 
+monitor blood level anti epilept drug provid best mean anticip interact regul dose when multipl medic have us 
+
+50528 
+letter zinc hair 
+lancet 
+0 
+
+50656 
+ir associ murin alloantigen serolog chemic definit ia specif associ h 2 b haplotyp 
+transplant 
+3 
+strain bear recombin h 2 haplotyp known posit recombin have been us demonstr antibodi react ia antigen associ h 2 b haplotyp sever h 2 antisera 
+two new ia specif ia.8 ia.9 both determin gene ir 1a subregion have thu been defin strain distribut specif ha been determin 
+immunoprecipit radio label membran antigen ha been us character ia.9 distinguish chemic from ia.7 membran prepar from strain possess both specif 
+
+51141 
+compar trial amoxycillin chloramphenicol treatment typhoid fever adult 
+lancet 
+2 
+a randomis clinic trial 124 adult patient typhoid fever prove blood cultur show amoxycillin dosag 1 g 
+six hourli fourteen dai altern chloramphenicol which ha hitherto been regard drug choic 
+
+51173 
+letter defin malnutrit young child 
+lancet 
+0 
+
+51205 
+letter miss wilson diseas 
+lancet 
+0 
+
+51237 
+serum albumin prognost indic oedemat malnutrit 
+lancet 
+3 
+examin record 340 children admit hospit uganda oedemat malnutrit kwashiorkor show serum albumin concentr admiss close relat mortal rate 
+furthermor seri possibl show simpl relat between mortal rate degre wast present 
+the result further emphasis need includ serum albumin concentr intern classif system assess protein energi malnutrit especi kwashiorkor type 
+
+51269 
+letter bilirubin remov anion exchang resin 
+lancet 
+0 
+
+51301 
+letter femor palsi complic iliac bone biopsi 
+lancet 
+0 
+
+51333 
+letter tyramin pressor respons depress 
+lancet 
+0 
+
+51365 
+letter mother child separ birth contribut factor child abus 
+lancet 
+0 
+
+51397 
+letter potenti pitfal bioassai serum gentamicin 
+lancet 
+0 
+
+51429 
+letter zinc defici intraven feed 
+lancet 
+0 
+
+51478 
+effect mortal 1974 fuel crisi 
+natur 
+0 
+
+51960 
+secretin a new role old hormon 
+lancet 
+5 
+plasma secretin level were measur radioimmunoassai dure 72 hour starvat period nine healthi subject 
+immunoreact secretin i.r. level rose dramat dure starvat 
+the rise were sever order magnitud greater than those after intraduoden acid 
+the classic concept major function secretin control exocrin pancrea challeng result 
+the find suggest secretin hormon import dure starvat it role starvat mai relat it lipolyt properti 
+
+51992 
+letter futur chemic patholog 
+lancet 
+0 
+
+52024 
+letter is diabet mellitu disord glucoreceptor 
+lancet 
+0 
+
+52056 
+kaposi sarcoma byproduct tumour reject 
+lancet 
+4 
+it suggest kaposi sarcoma result chronic immunolog reaction between antigen alter transform lymphoid cell normal lymphocyt 
+in cours local graft versu host type activ angiogenesi factor liber intens prolifer mesenchym endotheli cell ensu 
+dure g.v.h. like activ oncogen viru either transfer induc cell respons angiogenesi factor 
+thu stage set neoplast transform cell environ which conduc progress growth viral transform vasoform mesenchym 
+
+52088 
+letter earli onset daunorubicin daunomycin cardiotox 
+lancet 
+0 
+
+52216 
+a ph depend auto agglutinin anti p specif 
+transfus 
+2 
+an agglutinin appar anti p specif reactiv onli ph valu below 6.0 found plasma healthi femal blood donor 
+it postul agglutinin recogn latent receptor reveal structur alter red blood cell membran which occur acid environ 
+
+52774 
+restor in vitro lymphocyt respons exogen adenosin deaminas patient sever combin immunodefici 
+lancet 
+12 
+defici adenosin deaminas a.d.a occur autosom recess form sever combin immunodefici s.c.i.d 
+the role enzym defici pathogenesi immun defect clear 
+a patient a.d.a 
+s.c.i.d studi dure first six week life found have b t lymphocyt well 25 normal lymphocyt respons mitogen 
+thi patient subsequ becam sever lymphopen loss mitogen respons 
+addit calf intestin a.d.a 
+human erythrocyt a.d.a 
+cultur patient lymphocyt restor abil prolifer when stimul mitogen 
+these data indic a.d.a 
+defici causal relat cellular immun defect observ a.d.a 
+s.c.i.d 
+suggest possibl role enzym replac therapi disord 
+
+52806 
+letter hepat b antibodi polymyalgia rheumatica 
+lancet 
+0 
+
+53195 
+anti thymocyt serum mai enhanc suppress respons same antigen determin 
+immunolog 
+5 
+treatment balb c mice heterolog anti thymocyt serum at increas respons c polysaccharid rough strain pneumococcu r36a suppress respons vaccin whole organ 
+phosphorylcholin major antigen determin both c polysaccharid vaccin 
+at also suppress respons phosphorylcholin when coupl variou protein carrier 
+in so far examin at had effect adher cell capabl adher cell antigen stimul antibodi respons non adher cell 
+the contrast effect antiserum can best account assum act least two differ popul thymic deriv cell 
+
+53353 
+letter relief myoclonu l tryptophan 
+lancet 
+0 
+
+53385 
+organis health 
+lancet 
+0 
+
+53417 
+letter mollaret mening 
+lancet 
+0 
+
+53449 
+letter ag depend sensit salicyl 
+lancet 
+0 
+
+53481 
+letter qualiti quantiti surviv acut myeloid leukaemia 
+lancet 
+0 
+
+53513 
+letter hormon sensit breast cancer 
+lancet 
+0 
+
+53545 
+robert forb 
+lancet 
+0 
+
+53577 
+letter blood viscos ischaem exercis e.c.g 
+lancet 
+0 
+
+53609 
+editori specif immunoglobulin prevent hepat b 
+lancet 
+0 
+
+53641 
+letter glucos toler test hl a type rel patient juvenil onset diabet mellitu 
+lancet 
+0 
+
+53673 
+letter surviv acut myeloid leukaemia 
+lancet 
+0 
+
+53705 
+letter rash congenit rubella 
+lancet 
+0 
+
+53737 
+letter surviv acut myeloid leukaemia 
+lancet 
+0 
+
+53790 
+immunolog cross reactiv between testicular androgen bind protein serum testosteron bind globulin 
+natur 
+0 
+
+54520 
+gentamicin resist staphylococcu aureu 
+lancet 
+2 
+a clinic isol staphylococcu aureu resist gentamicin kanamycin tobramycin virtu product drug inactiv enzym 
+attempt establish cellular locat genet determin enzym synthesi have given equivoc result 
+
+54552 
+letter model gastric cancer epidemiolog 
+lancet 
+0 
+
+54584 
+acut diabet abdomen childhood 
+lancet 
+2 
+three children present acut surgic emerg due undiagnos diabet mellitu 
+where diabet ketoacidosi mimick acut abdomen three clinic featur import reach right diagnosi name histori polydipsia polyuria anorexia preced abdomin pain deep sigh rapid respir sever dehydr 
+
+54616 
+letter labetalol clonidin sever hypertens 
+lancet 
+0 
+
+54648 
+basic scienc scienc medic educ 
+lancet 
+5 
+it gener accept medic student should learn those stori from basic scienc which enabl medicin ration 
+but sever reason why scienc explanatori activ ha much more offer particularli view popper accept 
+unfortun appreci natur scienc onli accident acquir tradit school current forc mai well weaken it chanc newer school 
+some critic level modern medincin which mai attribut excess scienc misdirect 
+there too littl scienc too much 
+
+54680 
+first line chemotherapi retreat bacteriolog relaps pulmonari tuberculosi follow shortcours regimen 
+lancet 
+6 
+total 404 chines 778 east african patient newli diagnos drug sensit pulmonari tuberculosi were treat short cours regiment antituberculosi chemotherapi 
+the chines receiv 6 month 9 month regimen streptomycin plu isoniazid plu pyrazinamid east african 6 month regiment streptomycin plu isoniazid alon third drug 
+28 chines 45 african patient who relaps drug sensit strain after short cours regimen were retreat standard first line chemotherapi 
+the chines were given everi singl dose under full supervis african initi phase onli 
+at 12 month from start retreat all 28 chines 40 89 45 african had favour therapeut respons retreat regimen 
+2 5 east african patient whose retreat fail were known have been irregular take drug 
+
+54712 
+letter chromosom abnorm angioimmunoblast lymphadenopathi 
+lancet 
+0 
+
+54744 
+cyclic adenosin monophosph ventricular fibril antiarrhythm drug 
+lancet 
+3 
+it propos develop ventricular fibril context ischaem heart diseas myocardi infarct can relat accumul cyclic adenosin 3',5' monophosph a.m.p ischaem zone 
+the known electrophysiolog metabol action cyclic a.m.p 
+conson hypothesi which also provid framework better understand action antiarrhythm drug 
+
+54776 
+letter vitamin c induc hyperoxaluria 
+lancet 
+0 
+
+54808 
+editori form function sarcoid granuloma 
+lancet 
+0 
+
+54840 
+letter cimetidin gastric potenti differ 
+lancet 
+0 
+
+55302 
+the radionuclid identif tumor 
+cancer 
+9 
+tumor seek radiopharmaceut have been emploi diagnosi primari neoplasm detect distant diseas particularli local tumor foci facilit biopsi plan radiat portal assess respons tumor therapi 
+at present ideal tumor scan agent 
+howev sever approach appear us offer promis further studi 
+the greatest experi ha been gallium 67 which ha major util stage hodgkin diseas diagnosi bronchogen carcinoma detect certain metastat brain tumor identif recurr diseas noninvas diagnosi leukem complic 
+a number radiolabel antibiot chemotherapeut agent have shown promis includ tetracyclin bleomycin 
+a major drawback howev agent which share gallium 67 appear sequest inflammatori well neoplast tissu 
+a most intrigu approach us radiolabel antibodi tumor associ antigen 
+anim clinic experi have emploi antifibrin antifibrinogen anticarcinoembryon antigen antiferritin 
+theoret agent should allow greater tumor specif 
+
+55555 
+letter buffer therapi intraventricular haemorrhag 
+lancet 
+0 
+
+55587 
+anticonvuls parent epilepsi develop birth defect 
+lancet 
+10 
+the result two studi on finland on u.s.a rais possibl fetal damag previous attribut phenytoin other anticonvuls drug princip phenobarbiton mai due epilepsi itself 
+in u.s.a drug exposur inform collect befor deliveri cohort 50 282 mother child pair 
+the total malform rate 305 children born epilept mother 10.5 against 6.4 remaind p less than 0.01 correspond rate major malform were 6.6 2.7 
+when father had epilepsi malform rate children were intermedi 
+the rate did vari significantli accord matern anticonvuls therapi 
+mental motor score 8 month ag intellig quotient score 4 year were lower children epilept mother children epilept father 
+the score show onli random variat accord matern anticonvuls therapi 
+in finland 2784 children craniofaci anomali were compar equal number normal children 8 2 mother respect receiv anticonvuls while pregnant epilepsi 
+in studi separ effect diseas it treatmet could evalu 
+both studi did find evid fetal damag when phenobarbiton taken indic other than epilepsi 
+
+55619 
+letter potenti bronchodil glucocorticoid 
+lancet 
+0 
+
+55651 
+non invas quantit corneal copper hepatolenticular degener wilson diseas 
+lancet 
+6 
+the corneal copper content measur x rai excit spectrometri two control seven patient wilson diseas 
+patient who were treat irregularli treat all show high corneal copper content 
+those who were adequ treat had low level compar control 
+in on case corneal copper content declin 45 after cours dimercaprol 
+the corneal copper measur show correl slit lamp appear kayser fleischer ring 
+it suggest non invas x rai excit spectrometri can provid fast reliabl method earli diagnosi wilson diseas object evalu efficaci treatment diseas 
+
+55683 
+letter do tricycl antidepress work 
+lancet 
+0 
+
+55715 
+treatment ulcer coliti oral disodium cromoglyc a doubl blind control trial 
+lancet 
+3 
+twelv patient ulcer protocol were treat six month each oral disodium cromoglyc 2 g dai placebo doubl blind cross over trial 
+the activ drug significantli improv patients' sens well be signoidoscop rectal biopsi appear 
+oral administ disodium cromoglyc mai have place long term manag coliti 
+
+55747 
+letter parkinson induc fluphenazin decano 
+lancet 
+0 
+
+55779 
+acut traumat intracrani haematoma without skull fractur 
+lancet 
+3 
+307 case acut traumat intracrani haematoma patient admit institut neurolog scienc glasgow have been analys variou present featur 
+57 19 had fractur 14 had neither fractur nor neurolog symptom sign immedi after injuri 
+apart from children immedi admiss observ 14 case period 24 hour rare led earli detect haematoma 
+
+55811 
+letter endem balkan nephropathi 
+lancet 
+0 
+
+55843 
+editori seventeen principl about cancer someth 
+lancet 
+0 
+
+55875 
+letter decreas serum iga myasthenia gravi 
+lancet 
+0 
+
+55907 
+letter cancer detect 
+lancet 
+0 
+
+55939 
+letter diagnosi hepat amoebiasi 
+lancet 
+0 
+
+56532 
+immunosuppress plasma exchang treatment goodpastur syndrom 
+lancet 
+7 
+seven patient goodpastur syndrom induc anti glomerular basement membran anti g.b.m antibodi were treat regimen intens plasma exchang cytotox drug steroid 
+in three patient retain some renal function present regimen led suppress eventu termin antibodi synthesi improv renal function 
+in four patient all anur present antibodi g.b.m 
+persist variabl reduct circul level 
+no return renal function occur group all whom had extens chang renal biopsi 
+pulmonari haemorrhag life threaten on patient rapidli control all five patient whom present featur 
+in addit it effect antibodi level plasma exchang us volum replac plasma protein fraction p.p.f result substanti deplet complement fibrinogen mediat possibl contribut antibodi induc injuri 
+
+56564 
+letter postop radiotherapi breast cancer 
+lancet 
+0 
+
+56596 
+editori after dopa 
+lancet 
+0 
+
+56628 
+letter lung ruptur occult posit end expiratori pressur 
+lancet 
+0 
+
+56660 
+editori repres patient 
+lancet 
+0 
+
+56692 
+letter 5 fluorouracil thyroid 
+lancet 
+0 
+
+56985 
+a malign tumor vagina resembl synovi sarcoma light electron microscop studi 
+cancer 
+8 
+a malign tumor aris upper later vagin mucosa 24 year old white woman hitherto undescrib literatur studi light electron microscopi 
+the main part tumor epithelioid form tubular acinar pattern 
+at peripheri tumor cell were more spindli form sheet resembl fibrosarcoma 
+the tumor cell contain occasion materi posit mucicarmin alcian blue pa stain nest cell form acini were surround reticulin fiber 
+the tumor ultrastructur consist singl type cell larg cytoplasm vacuol occasion perinuclear intracytoplasm filament 
+slender long microvilli project lumina were also characterist 
+basal lamina were occasion present around acini 
+the find suggest tumor mesenchym origin close relat synovi sarcoma 
+
+57354 
+letter lecithin sphingomyelin ratio sex incid respiratori distress syndrom 
+lancet 
+0 
+
+57386 
+letter smoke fetu 
+lancet 
+0 
+
+57418 
+letter levamisol treatment cancer 
+lancet 
+0 
+
+57450 
+hla b27 frozen shoulder 
+lancet 
+4 
+histocompat antigen were determin 38 patient frozen shoulder 216 normal blood donor 
+hla b27 significantli more common patient frozen shoulder 42 than control 10 
+the distribut other 19 histocompat antigen similar patient control group 
+thi result mai associ suggest immunolog pathogenesi condit 
+
+57482 
+letter hectopasc pressur 
+lancet 
+0 
+
+57514 
+editori plasmapheresi immunosuppress 
+lancet 
+0 
+
+57546 
+letter highli purifi insulin 
+lancet 
+0 
+
+57901 
+a studi two non complementari h 2 mutat mice us skin transplant serolog analysi 
+genetika 
+5 
+hz1 m505 two mutant affect kend h 2 major histocompat system mous 
+inabl m505 complement hz1 consid evid same gene alter both mutat 
+the gain antigen two mutant can cross react vivo lost antigen determin ident reveal skin graft test presensit recipi 
+the antiserum asi 0,15 d x a anti i could differenti between normal mutant cell well between both mutant absorpt test 
+these result show some hapten determin chang hz1 m505 mutat togeth chang histocompat determin 
+
+58167 
+letter 5 f.u d n.c.b non clinic vagin cancer 
+lancet 
+0 
+
+58199 
+efficaci low dose heparin prevent extens deep vein thrombosi patient undergo total hip replac 
+lancet 
+17 
+in prospect trial prophylact efficaci low dose heparin investig 84 consecut patient undergo total hip replac 
+52 were randomli alloc receiv heparin combin heparin dihydroergotamin d.h.e remain 32 patient who were oper on orthopaed team did receiv prophylaxi act control group 
+the frequenc deep vein thrombosi d.v.t determin 125i fibrinogen test venographi 69 control group 32 patient receiv heparin alon 16 those receiv heparin d.h.e 
+the differ between control group each group receiv prophylaxi statist signific 
+the frequenc femor vein thrombi demonstr venographi analys separ becaus it frequent associ major pulmonari embol 
+femor vein thrombi develop 17 53 control group while develop onli 4 patient 8 prophylaxi group p less than 0.01 
+1 patient control group di due massiv pulmonari embol anoth patient again control group clinic featur suggest major non fatal pulmonari embol develop 
+thi complic observ patient receiv prophylaxi 
+there differ amount oper postop blood loss three group 
+in 3 patient entir seri wound haematomata develop all 3 were control haematomata develop after administr streptokinas larg dose heparin treatment extens femor vein thrombi 
+by us sensit assai heparin could detect plasma 67 sampl patient whom d.v.t 
+did develop 
+in contrast those patient whom d.v.t 
+develop heparin could detect onli 21 blood sampl p less than 0.01 
+it conclud patient undergo total hip replac low dose heparin prophylaxi effect reduc frequenc life threaten extens thrombi femor vein 
+prophylaxi us combin heparin d.h.e 
+requir further evalu 
+
+58231 
+letter glucos intoler diuret 
+lancet 
+0 
+
+58263 
+mechan renal hypertens 
+lancet 
+6 
+renal hypertens two kidnei type divid three stage 
+in first hypertens result from vasoconstrictor effect angiotensin ii 
+thi persist some extent second phase addit slow develop pressor effect also result from angiotensin ii probabl attribut sodium 
+in first two phase remov abnorm kidnei correct hypertens 
+thi fail third phase becaus chang opposit kidnei maintain hypertens 
+renin angiotensin probabl involv stage 
+
+58295 
+letter clinic pharmacolog 
+lancet 
+0 
+
+58327 
+commun method medic audit 
+lancet 
+3 
+advanc practic medicin over past forti year have render inform commun ineffect set maintain standard clinic care 
+in past five year four method commun have been introduc depart surgeri gui hospit problem orient medic record death and complic meet unit review meet clinic inform servic 
+it suggest can achiev qualiti control 
+
+58359 
+georg gordon bruce 
+lancet 
+0 
+
+58850 
+glycoprotein sendai viru purif antigen analysi 
+intervirolog 
+4 
+solubil envelop antigen glycoprotein sendai viru were purifi deae bio gel a column 
+monospecif antisera were prepar against antigen design hn f glycoprotein 
+these glycoprotein antigen distinct 
+immunodiffus analys envelop antigen three repres paramyxovirus sendai yucaipa newcastl diseas viru did reveal ani cross reaction among them antisera specif sendai viru glycoprotein 
+
+59041 
+letter on drug regimen epilepsi 
+lancet 
+0 
+
+59073 
+john adam macdougal 
+lancet 
+0 
+
+59105 
+letter k cell function patient chronic aggress hepat 
+lancet 
+0 
+
+59137 
+letter paediatr outpati follow up 
+lancet 
+0 
+
+59169 
+letter intraven fat e.f.a 
+lancet 
+0 
+
+59201 
+letter associ between hla b8 autoimmun juvenil diabet mellitu 
+lancet 
+0 
+
+59233 
+letter protect activ whoop cough convalesc serum serum iga level mice infect bordetella pertussi 
+lancet 
+0 
+
+59265 
+letter macrophag v cancer 
+lancet 
+0 
+
+59315 
+type c viru lymphosarcoma northern pike esox luciu 
+natur 
+0 
+
+59849 
+an epidem veno occlus diseas liver central india 
+lancet 
+2 
+an outbreak veno occlus diseas which probabl caus consumpt cereal mix seed plant crotalaria sp contain pyrrolizidin alkaloid occur sarguja district india novemb decemb 1975 
+42 67 record case di 
+
+59881 
+letter paramyxoviru like inclus brain patient sever multipl sclerosi 
+lancet 
+0 
+
+60169 
+anaplast neuron tumor brain 
+cancer 
+5 
+a multicentr neuron tumor brain uniqu morpholog featur describ 
+it compar four other markedli anaplast brain tumor contain neoplast neuron 
+demonstr axon process which must carefulli distinguish from other similarli stain structur essenti recognit tumor 
+recent experi suggest anaplast neuron tumor more frequent than gener realiz 
+it suggest axon stain should more wide emploi investig atyp highli pleomorph glioma 
+
+60539 
+letter clinic immunolog 
+lancet 
+0 
+
+60571 
+visualis thrombi technetium 99m urokinas a neg report 
+lancet 
+4 
+direct imag thrombi isotop label agent would provid conveni atraumat method diagnos deep venou thrombosi 
+urokinas label technectium 99m ha mani theoret advantag success us agent ha been report 
+a method tag urokinas tc 99m ha been develop which preserv clot lyse abil urokinas 
+the thrombu imag previous report ha been duplic 
+
+60603 
+letter prosthet mesocav shunt portal hypertens 
+lancet 
+0 
+
+60635 
+dopamin schizophrenia 
+lancet 
+5 
+the antipsychot action extra pyramid side effect neurolept drug strongli correl abil block central dopaminerg transmiss 
+it argu former more close relat action dopaminerg mechan mesolimb dopamin system latter similar action striatum 
+although amphetamin psychosi close resembl paranoid schizophrenia mai due excess dopamin releas clinic biochem endocrin studi suggest dopaminerg overact necessari concomit schizophren ill 
+it suggest primari defect schizophrenia doe lie dopamin neuron 
+it remain exclud receptor particularli mesolimb dopamin area becom supersensit deficit system which normal act antiagon mesolimb dopamin system 
+
+60667 
+letter quantit throat swab cultur 
+lancet 
+0 
+
+61140 
+direct effect glucagon protein amino acid metabol isol perfus rat liver interact insulin dexamethason net synthesi albumin acut phase protein 
+diabet 
+7 
+the isol rat liver perfus 12 hour ph 7.10 suspens bovin erythrocyt kreb ringer bicarbon buffer contain 3 per cent bovin serum albumin ha been us test system studi effect glucagon dexamethason presenc absenc insulin net biosynthesi rat serum albumin fibrinogen alpah1 acid glycoprotein alpha2 acut phase globulin haptoglobin 
+quantit measur perfus glucos amino acid nitrogen urea afford basi determin net glucos nitrogen balanc perfus system 
+although dose dexamethason total 1.0 mug us insuffici induc synthesi alpha2 acut phase globulin net synthes albumin fibrogen alpha1 acid glycoprotein haptoglobin were increas 
+glucagon given dexamethason depress albumin haptoglobin synthesi markedli fibrinogen alpha1 acid glycoprotein 
+glucagon dexamethason markedli enhanc ureogenesi glycogenolysi elicit exagger neg nitrogen balanc 
+the unfavor effect glucagon albumin haptoglobin synthesi nitrogen balanc were revers give insulin simultan 
+it emphas insulin essenti posit nitrogen balanc 
+
+61365 
+haemopoiet stem cell 
+lancet 
+0 
+
+61397 
+necrotis enterocol newborn is ga gangren bowel 
+lancet 
+6 
+necrotis enterocol n.e.c newborn thought caus ischaemia bowel 
+thi would favour convers clostridi spore which can occur veri earli intestin tract newborn toxin produc invad bacilli 
+the histolog resect gut specimen from 6 7 n.e.c 
+patient who had undergon oper similar case ga gangren bowel experiment provok pneumatosi cystoid intestinali 
+in on case clostridium perfringen type a cultur great number anaerob techniqu 
+the clostridia case mai have plai import role develop n.e.c 
+
+61429 
+phosphat defici osteomalacia dure regular haemodialysi 
+lancet 
+0 
+
+61461 
+brand name drug 
+lancet 
+0 
+
+61493 
+charl enriqu dent 
+lancet 
+0 
+
+61525 
+near miss sudden infant death 
+lancet 
+0 
+
+61635 
+immunolog enhanc rat renal allograft us rabbit antisera specif rat transplant antigen 
+transplant 
+7 
+rabbit immun particul solubl prepar rat lymphoid tissu ho strain produc antisera which react without strain specif rat lymphocyt 
+absorpt sera tissu from as strain rat remov antibodi react as tissu leav activ against ho cell onli 
+studi backcross rat show antigen detect sera were product agb gene gene segrag them 
+the immunosuppress activ rabbit antisera specif ag b5 rat transplant antigen test rat renal allograft assai 
+some antisera markedli prolong surviv as x ho f1 kidnei transplant as rat 
+the prolong graft surviv due al activ sinc sera were activ absenc antibodi direct against recipi antigen 
+there correl between vivo enhanc anti donor lymphocytotox titr xenoantisera 
+
+62129 
+blood pressur lower effect acut myocardi infarct 
+lancet 
+0 
+
+62161 
+doubl blind crossov trial levamisol recurr aphthou ulcer 
+lancet 
+6 
+a doubl blind crossov trial levamisol ha been carri out 47 patient recurr oral ulcer 
+signific decreas number ulcer ulcer dai were found after 2 month intermitt administr levamisol 
+about 64 patient respond drug decreas number ulcer more than 50 two more month 
+the remain 36 patient fail respond levamisol 23 had increas number ulcer 
+the side effect record patient take levamisol were compar those patient placebo except flu like syndrom 1 patient urticaria anoth necessit withdraw drug 
+the mechan action levamisol recurr oral ulcer known suggest levamisol mai correct defici suppressor cell potenti cellular respons crossreact microbi agent 
+
+62193 
+assess paracetamol poison 
+lancet 
+0 
+
+62225 
+paediatr prioriti evolv commun programm develop countri 
+lancet 
+0 
+
+62257 
+penylalanin hydroxyl phenylketonuria 
+lancet 
+0 
+
+62609 
+intracavitari bleomycin manag malign effus 
+cancer 
+6 
+instil bleomycin thoracostomi were util 38 patient malign pleural effus therapi produc complet partial respons rate 63 
+toxic minim 
+in patient intraperiton effus bleomycin instil after drainag produc complet partial respons 36 
+on patient had sever hypotens fever 
+patient ovarian breast carcinoma respond best among them effus were control greater 70 
+becaus it low system toxic absenc marrow toxic virtual absenc discomfort we think local instil bleomycin indic manag malign effus 
+
+62920 
+choic antibiot 
+lancet 
+0 
+
+62952 
+screw fixat olecranon 
+lancet 
+0 
+
+62984 
+fractur acryl bone cement 
+lancet 
+0 
+
+63016 
+intens cancer chemotherapi 
+lancet 
+0 
+
+63048 
+cadmium lead hypertens 
+lancet 
+0 
+
+63080 
+mitot index menstrual cycl 
+lancet 
+0 
+
+63413 
+demonstr intracellular copper bind protein orcein stain long stand cholestat liver diseas 
+gut 
+5 
+liver biopsi from eight patient primari biliari cirrhosi two chronic activ hepat cholestat form three long stand alcohol liver cirrhosi on extrahepat biliari obstruct were studi 
+in each case dark brown cytoplasm materi seen after stain tissu section shikata orcein method 
+in exactli same cellular subcellular locat orcein posit materi morpholog equal granul two differ ordinari stain method copper rubean acid mallori parker haematoxylin gave posit reaction 
+the earlier histochem find have reveal protein natur high sulphydryl content orcein posit materi 
+it close associ copper liver section suggest it copper bind natur indic common copper protein complex accumul cytoplasm liver cell dure longstand cholestasi biliari diseas variou pathogenet origin 
+
+63681 
+tuberculosi coalmin 
+lancet 
+0 
+
+63713 
+limit transcendent medit treatment essenti hypertens 
+lancet 
+5 
+20 hypertens patient particip profession supervis programm transcendent medit show signific chang blood pressur after 6 month studi 
+although were small reduct systol blood pressur puls rate earli trial chang had disappear 6 month 
+at time did mean diastol pressur fall significantli 
+plasma renin activ did chang dure studi 
+it conclud while gener feel wellb experienc most patient mai provid us adjunct convent treatment unlik transcendent medit contribut directli toward lower blood pressur 
+
+63745 
+treatment hypersplen embolu placement splenic arteri 
+lancet 
+5 
+in patient liver cirrhosi sever hypersplen resist corticosteroid splenectomi attempt prove imposs 
+embolis splenic arteri tini fragment absorb gelatin spong induc gradual restitut haematolog function normal after 6 wk 
+abdomin pain paralyt ileu short durat transient pyrexia pleural effus ensu were well toler 
+the patient ha remain well 2 1 2 mo later 
+it suggest simpl method mai prove reward could safe us necessari more than onc patient whom other treatment unsuit have fail 
+
+63777 
+recurr ulcer after vagotomi 
+lancet 
+0 
+
+63809 
+neonat cerebr intraventricular haemorrhag 
+lancet 
+0 
+
+63841 
+exploit heat sensit leukaem cell 
+lancet 
+0 
+
+63873 
+organ damag after open heart surgeri 
+lancet 
+0 
+
+64647 
+myocardi ischaemia risk factor death from coronari heart diseas 
+lancet 
+6 
+mortal follow up now complet 5 year 18 403 male civil servant ag 40 64 who were examin between 1967 69 whitehal studi british civil servant 
+dure period 277 them di coronari heart diseas c.h.d half death were subject whom find initi screen had suggest earli myocardi ischaemia angina histori possibl infarct accord standard questionnair electrocardiograph evid ischaemia 
+the find suspect ischaemia had greater predict power than primari coronari risk factor from which gener independ 
+at each level primari risk factor risk death from c.h.d 
+much greater presenc suspect ischaemia and possibl except glucos toler physic activ main risk factor still oper even stage earli ischaemia 
+these find have implic futur studi effect intervent 
+
+64679 
+breath hydrogen dure sleep 
+lancet 
+0 
+
+64711 
+us earli fetal tissu obtain from suction termin pregnanc 
+lancet 
+4 
+organ were identifi fetal product pregnanc short gestat termin suction method 
+variou tissu from fetus were grown tissu cultur some cultur were us isol virus 
+thi new approach would ensur suppli human embryon tissu essenti certain virlog procedur suitabl fetus from pregnanc termin hysterotomi becom less common 
+tissu from earli fetus could also us fro transplant development studi 
+
+64743 
+toxic human leucocyt interferon prepar human bone marrow cultur 
+lancet 
+0 
+
+64775 
+drug diarrhoea small children 
+lancet 
+0 
+
+64807 
+magnesium therapi neonat tetani 
+lancet 
+3 
+104 infant symptomat hypocalcaemia were randomli alloc treatment calcium glucon phenobarbiton magnesium sulphat 
+infant treat magnesium sulphat had higher plasma calcium concentr after 48 hours' treatment fewer convuls dure after treatment period 
+magnesium sulphat recommend treatment choic symptomat neonat tetani whether hypomagnesaemia 
+
+64839 
+14c glychol acid breath test 
+lancet 
+0 
+
+64871 
+vaccin against whoop cough 
+lancet 
+0 
+
+64903 
+kawasaki diseas europ 
+lancet 
+0 
+
+65051 
+regul herpesviru thymidin kinas activ lm tk cell transform ultraviolet light irradi herp simplex viru 
+virolog 
+0 
+
+65521 
+the mast cell heparin paradox 
+lancet 
+6 
+purifi heparin extract from tissu rich mast cell remain ideal rapid anticoagul clinic practic 
+nevertheless ground doubt inject commerci heparin correspond releas heparin contain granul from mast cell 
+the metachromat granul contain much more than heparin chondroitin heparitin histamin in some speci 5 hydroxytryptamin also varieti enzym 
+shed granul releas trauma ani kind ingest connect tissu phagocyt digest 
+commerci heparin other hand taken up cell reticuloendotheli system store there 
+thi appar paradox can resolv conced mast cell primarili concern connect tissu ehrlich saw centuri ago that within broad limit can express itself varieti wai 
+
+65553 
+lymphocyt transform minim chang nephrot syndrom 
+lancet 
+0 
+
+65585 
+drug interfer laboratori investig 
+lancet 
+0 
+
+65617 
+venou ulcer 
+lancet 
+0 
+
+65649 
+15 17 transloc consist chromosom chang acut promyelocyt leukaemia 
+lancet 
+0 
+
+65681 
+escherichia coli mening congenit tuberculosi same infant 
+lancet 
+0 
+
+65817 
+microscop foci cancer prostatectomi benign diseas diagnost surgic consider 
+urolog 
+5 
+a studi 66 patient whom microscop foci prostat cancer found prostatectomi done benign prostat hyperplasia reveal 32 66 case 48 were retrospect abnorm rectal find should have suggest possibl neoplasia 
+other abnorm were elev serum acid phosphatas 5 patient asymmetr enlarg on later prostat lobe cystoscopi 7 patient unilater hydroureteronephrosi 7 patient 
+urinari retent present symptom 56 patient 
+difficult enucl note 41 open prostatectomi 
+the import perform care prostat biopsi ani suspici prostat enlarg again stress 
+
+66199 
+in vitro studi h 2 link unrespons synthet polypeptid antigen ii induct suppressor cell both respons unrespons mice t,g a l gat 
+immunolog 
+2 
+antigen specif t suppressor cell can induc vitro from unprim lymphoid cell high respond c57bl 10 low respond b10.br b10.a cba mice t,g a l high respond b10 b10;a non respond b10.g dba 1 mice gat10 
+the suppressor cell induc from high low non respond mice appear ident effici antigen concentr requir induct induct kinet 
+
+66455 
+growth hormon prolactin respons levodopa affect ill 
+lancet 
+0 
+
+66487 
+inform decis surgic unit 
+lancet 
+0 
+
+66519 
+intestin absorpt 25 hydroxyvitamin d osteomalacia primari biliari cirrhosi 
+lancet 
+7 
+bone histolog intestin absorpt 25 hydroxyvitamin d3 25 ohd were investig 11 patient primari biliari cirrhosi p.b.c 
+4 patient had osteomalacia all had receiv long term cholestyramin 
+plasma 25 hydroxyvitamin d 25 ohd concentr after oral dose 25 ohd3 were significantli lower patient p.b.c 
+especi those osteomalacia than normal control 
+serum calcium urinari calcium excret were lower serum alkalin phosphatas higher patient osteomalacia 
+it suggest absorpt 25 ohd undergo enterohepat circul dietari vitamin d reduc patient p.b.c 
+absorpt 25 ohd further decreas cholestyramin develop osteomalacia thu hasten 
+
+66551 
+silicon aluminium heart death 
+lancet 
+0 
+
+66583 
+varicos vein tropic africa 
+lancet 
+6 
+1259 tanzanian provinci town were examin varicos vein 
+5 5 6 1 men 5 0 women 1000 peopl ag eighteen year over had varicos vein 
+thi preval intermedi between report minim develop area 0 1 0 4 ag adjust rate report michigan 12 3 
+the tanzanian diet includ some refin carbohydr mean daili stool weight 228 g indic fibr content intermedi between tradit african commun 490 g western countri 115 g 
+these find consist hypothesi relat varicos fibr deplet diet 
+life long us squat posit defaec did protect against develop varicos vein 
+
+66615 
+melanocyt stimul hormon level doxorubicin induc hyperpigment 
+lancet 
+0 
+
+67099 
+an immunofluoresc techniqu counterstain fix cell detect antibodi human herpesvirus antibodi pattern patient hodgkin diseas nasopharyng carcinoma 
+intervirolog 
+6 
+an indirect immunofluoresc if test fix cell evans' blue counterstain describ all four human herpesvirus i. herp simplex viru type 1 type 2 hsv 1 hsv 2 varicella zoster viru vzv cytomegaloviru cmv epstein barr viru ebv 
+comparison immunodiffus id hsv 2 id complement fixat cf vzv cmv demonstr specif high sensit if test 
+also introduc modif anti complement immunofluoresc acif test ebv determin nuclear antigen ebna permit simultan titrat antibodi nuclear antigen anti nuclear factor anf 
+seroepidemiolog studi virus patient hodgkin diseas hd netherland reveal follow pattern 1 nodular scleros ns hd 4 fold signific elev antibodi titer ebv vac elev ebv ea ebna 2 mix cellular mc hd 10 fold signific elev both ebv vca ea elev ebna found compar control group 
+these pattern ns mc hd differ from pattern nasopharyng carcinoma npc which manifest elev antibodi titer ebv vca ea well ebna 
+antibodi titer hsv vzv cmv significantli elev either hd npc 
+
+67307 
+chlamydi ureaplasma associ urethr 
+lancet 
+0 
+
+67339 
+depress lymphocyt function after bereav 
+lancet 
+5 
+dure 1975 twenti six bereav spous took part detail prospect investig effect sever stress immun system 
+t b cell number function hormon concentr were studi approxim 2 week after bereav 6 week thereaft 
+the respons phytohaemagglutinin significantli depress bereav group second occas respons concanavalin a 6 week 
+there differ t b cell number protein concentr presenc autoantibodi delai hypersensit cortisol prolactin growth hormon thyroid hormon assai between bereav group control 
+thi first time sever psycholog stress ha been shown produc measur abnorm immun function which obvious caus hormon chang 
+
+67371 
+serum phenytoin seizur electroencephalographi 
+lancet 
+0 
+
+67403 
+classif diabet 
+lancet 
+0 
+
+67435 
+intrapleur b.c.g immunostimul lung cancer 
+lancet 
+0 
+
+67467 
+enkephalin like immunoreact human gastrointestin tract 
+lancet 
+6 
+morphin ha power action brain gut 
+peptid opiat like action endorphin enkephalin known normal constitu brain now enkephalin like immunoreact ha been shown gut 
+enkephalin like immunoreact present all area gut particularli high concentr antrum signific amount upper small intestin 
+immunocytochemistri 1 micronm serial section reveal enkephalin like immunoreact numer cell antral mucosa few cell duoden mucosa pancrea myenter plexu gallbladd cystic duct bileduct other area lower intestin 
+gastrointestin physiolog appear partli regul local act hormon enkephalin mai on these 
+the establish effect morphin alimentari tract provid clue possibl physiolog role enkephalin 
+
+67499 
+a measur accept patients' attitud haemophilia 
+lancet 
+0 
+
+67531 
+autolymphocytotox antibodi kidnei transplant 
+lancet 
+0 
+
+67982 
+antigen degrad human colon ecosystem host abo blood type influenc enter bacteri degrad cell surfac antigen escherichia coli o86 
+gastroenterolog 
+0 
+
+68205 
+inherit idiopath haemochromatosi 
+lancet 
+0 
+
+68237 
+a person view scrapi research 
+lancet 
+0 
+
+68269 
+dr w grei walter 
+lancet 
+0 
+
+68301 
+us blood cultur 
+lancet 
+0 
+
+68333 
+intraoss fluid administr emerg 
+lancet 
+2 
+15 patient who need prompt administr fluid whom cannul vein prove difficult were given variou solut drug intraoss rout 
+the result therapi were reward seriou complic were attribut procedur 
+
+68365 
+rotaviru antibodi crohn diseas ulcer coliti 
+lancet 
+0 
+
+68397 
+the anion gap 
+lancet 
+0 
+
+68459 
+the answer emot behavior problem school ag 
+pediatr 
+0 
+
+69058 
+immunis polyval pneumococc vaccin reduct adult respiratori mortal new guinea highland commun 
+lancet 
+3 
+a doubl blind control trial 14 valent pneumococc polysaccharid vaccin carri out 11 958 adult tari papua new guinea highland 
+pneumococc infect confirm blood cultur lung aspir less vaccin group 84 
+mortal from pneumonia less 44 
+
+69090 
+alcohol head injuri 
+lancet 
+0 
+
+69122 
+intraperioton povidon iodin 
+lancet 
+0 
+
+69154 
+pancreat extract 
+lancet 
+0 
+
+69186 
+anim prolactin evid antipsychot activ piperoxan 
+lancet 
+0 
+
+69218 
+prostaglandin acut intestin pseudo obstruct 
+lancet 
+0 
+
+69482 
+pulmonari tumorigenesi syrian golden hamster after intratrach instil automobil exhaust condens 
+cancer 
+5 
+syrian golden hamster were intratrach instil onc everi two week life automobil exhaust condens aec two dose level 
+the condens prepar from most common german passeng car driven europa test cycl simul citi drive contain 340 microgram g benzo a pyren b a p 
+despit veri low total dose b a p receiv all anim both dosag group develop multipl pulmonari adenoma 
+electron microscopi reveal tumor resembl b a p induc pulmonari adenoma ultrastructur 
+numer condens laden macrophag tumor peripher lung tissu indic littl instil condens had been remov from airwai through mucociliari action 
+
+69800 
+standard rehydr fluid 
+lancet 
+0 
+
+69832 
+activ ig regulatori mechan transmucos absorpt antigen 
+lancet 
+5 
+the develop immedi hypersensit depend essenti product ig antibodi usual common environment antigen 
+it ha been suggest atop individu produc ig antibodi result overstimul antigen occur through iga defici which default allow absorpt via mucosa abnorm larg amount antigen 
+howev work laboratori anim indic mechan which antithesi overstimul concept quantiti antigen suffici larg activ ig immunoregulatori mechan particularli suppressor t cell normal absorb across mucosa that where other condit activ cell appropri inhibit rather than stimul ig respons result 
+in wai allergi aris through defect on more compon immunoregulatori mechan 
+the fact atop individu do becom allerg all ubiquit antigen mai hyposensitis evid defect rel rather than absolut 
+
+69864 
+erythropoietin 
+lancet 
+0 
+
+69896 
+agranulocytosi four month after cimetidin therapi 
+lancet 
+0 
+
+69928 
+myocardi scintigraphi chagas' diseas 
+lancet 
+0 
+
+69960 
+fetal hiccup 
+lancet 
+0 
+
+70106 
+pangola stunt viru thin section neg stain 
+virolog 
+0 
+
+70600 
+multimod therapi histolog stage ii breast cancer multicentr breast cancer chemotherapi group 
+lancet 
+0 
+
+70632 
+peripher gangren complic beta blockad 
+lancet 
+0 
+
+70664 
+anaphylaxi after gentamycin 
+lancet 
+0 
+
+70696 
+apartheid mental health care 
+lancet 
+0 
+
+70728 
+hb g norfolk associ malign myelosclerosi 
+lancet 
+0 
+
+71397 
+propranolol adjunct treatment schizophrenia 
+lancet 
+3 
+propranolol contribut usefulli practic manag patient chronic schizophrenia whose florid symptom had remit major tranquillis 
+14 patient who had receiv averag equival 954 mg per dai chlorpromazin 10 year were given addit either propranolol placebo 12 week 
+both group had improv twelfth week propranolol group had improv significantli more 
+
+71429 
+aryl hydrocarbon hydroxylas induc carcinoma renal pelvi uret 
+lancet 
+0 
+
+71461 
+on hundr kidnei transplant belfast citi hospit 
+lancet 
+8 
+100 kidnei transplant have been carri out 91 patient 7 had 2 transplant 2 had 3 transplant 
+4 transplant were from live relat donor 96 from cadav 
+76 patient surviv all on function kidnei 
+the cumul surviv patient 82 2 year 80 7 5 year 
+8 patient di function graft 2 other death took place more than 3 month after remov reject kidnei resumpt haemodialysi 
+there were death from sepsi first 60 dai after transplant 
+the cumul surviv all graft 82 1 2 5 year 
+the cumul surviv first graft 82 5 2 5 year 
+
+71493 
+grei scale ultrasonographi portal vein 
+lancet 
+4 
+the state extrahepat portal venou system correctli assess grei scale ultrasonographi twenti on patient extrahepat portal vein obstruct result agre those obtain portal venographi 
+in twenti two ag match control patent portal vein displai 
+the diamet portal vein ultrasound scan significantli less twenti two control than eighteen patient chronic liver diseas 
+grei scale ultrasonographi reliabl inexpens non invas method diagnos extrahepat portal vein obstruct 
+
