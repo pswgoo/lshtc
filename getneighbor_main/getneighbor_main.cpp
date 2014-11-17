@@ -75,7 +75,7 @@ int main()
 	}
 	allTestFeatures.Normalize();//get testdata feature
 
-	Featureneighbor featureneighbor;
+	FeatureNeighbor featureneighbor;
 	rtn = featureneighbor.Build(allTrainFeatures.mFeatures, allTestFeatures.mFeatures, lshtcTrainFeatureID, lshtcTestFeatureID);
 	CHECK_RTN(rtn);
 
@@ -83,7 +83,8 @@ int main()
 	vector<double> testSimilarity;
 	int testtopK = 10;
 	rtn = featureneighbor.GetNeighbor(lshtcTestFeatureID[0], testtopK, testNeighbor, testSimilarity);
-	for (int i = 0; i < testtopK; i++) printf("\n%d %lf", testNeighbor[i], testSimilarity[i]);
+	for (int i = 0; i < testtopK; i++)
+		printf("\n%d %lf", testNeighbor[i], testSimilarity[i]);
 	CHECK_RTN(rtn);
 	
 	rtn = featureneighbor.SaveBin("lshtc_neighbor.bin");

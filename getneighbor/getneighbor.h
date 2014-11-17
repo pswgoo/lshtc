@@ -1,7 +1,8 @@
 #include "common/common_basic.h"
+#include "extractfeature/feature.h"
 #include <omp.h>
 
-class Featureneighbor
+class FeatureNeighbor
 {
 
 public:
@@ -11,12 +12,12 @@ public:
 	std::vector<std::vector<double> > mSimilarity;
 
 public:
-	Featureneighbor();
-	~Featureneighbor();
+	FeatureNeighbor();
+	~FeatureNeighbor();
 
 	int Clear();
 
-	double CalcSimilarity(std::vector<double> traindata, std::vector<double> testdata);
+	double FeatureNeighbor::CalcSimilarity(const Feature& feature1, const Feature& feature2);
 
 	int Build(std::vector<std::map<int, double> > trainset, std::vector<std::map<int, double> > testset, std::vector<int> trainsetID, std::vector<int> testsetID, int printLog = SILENT);
 
