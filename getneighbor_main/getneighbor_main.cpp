@@ -12,7 +12,7 @@ int main()
 {
 	int rtn = 0;
 	LhtcDocumentSet lshtcTrainSet, lshtcTestSet;
-	UniGramFeature trainUniGrams, testUniGrams;
+	UniGramFeature uniGrams;
 	string trainsetFile = "F:\\lshtc\\data\\loc_train.bin";
 	string testsetFile = "F:\\lshtc\\data\\loc_test.bin";
 	vector<Feature> lshtcTrainFeatureSet, lshtcTestFeatureSet;
@@ -22,11 +22,13 @@ int main()
 	lshtcTestFeatureSet.clear();
 	lshtcTrainFeatureID.clear();
 	lshtcTestFeatureID.clear();
+
+	clog << "Load Unigram Dictionary" << endl;
+	rtn = uniGrams.Load("F:\\lshtc\\work\\lshtc_unigram_dictionary_loctrain.bin");
+	CHECK_RTN(rtn);
+	clog << "Total " << uniGrams.mDictionary.size() << " unigrams" << endl;
 	
 	rtn = lshtcTrainSet.LoadBin(trainsetFile, FULL_LOG);
-	CHECK_RTN(rtn);
-
-	rtn = trainUniGrams.BuildLhtc(lshtcTrainSet);
 	CHECK_RTN(rtn);
 
 	int trainSize = (int)lshtcTrainSet.Size();
@@ -44,7 +46,7 @@ int main()
 #pragma omp parallel for schedule(dynamic)
 	for (int i = 0; i < (int)vecTrainDocument.size(); i++)
 	{
-		trainUniGrams.ExtractLhtc(*vecTrainDocument[i], allTrainFeatures.mFeatures[i]);
+		uniGrams.ExtractLhtc(*vecTrainDocument[i], allTrainFeatures.mFeatures[i]);
 		if (allTrainFeatures.mFeatures[i].size() == 0) printf("%d Warning!!\n", i);
 	}
 	allTrainFeatures.Normalize();//get traindata feature
@@ -52,15 +54,12 @@ int main()
 	rtn = lshtcTestSet.LoadBin(testsetFile, FULL_LOG);
 	CHECK_RTN(rtn);
 
-	rtn = testUniGrams.BuildLhtc(lshtcTestSet);
-	CHECK_RTN(rtn);
-
 	int testSize = (int)lshtcTestSet.Size();
 	for (std::map<int, LhtcDocument>::iterator it = lshtcTestSet.mLhtcDocuments.begin(); it != lshtcTestSet.mLhtcDocuments.end(); ++it)
 		lshtcTestFeatureID.push_back(it->first);
 
 	vector<LhtcDocument*> vecTestDocument;
-	vecTrainDocument.reserve(lshtcTestSet.Size());
+	vecTestDocument.reserve(lshtcTestSet.Size());
 	for (map<int, LhtcDocument>::iterator it = lshtcTestSet.mLhtcDocuments.begin(); it != lshtcTestSet.mLhtcDocuments.end(); ++it)
 		vecTestDocument.push_back(&(it->second));
 
@@ -70,7 +69,7 @@ int main()
 #pragma omp parallel for schedule(dynamic)
 	for (int i = 0; i < (int)vecTestDocument.size(); i++)
 	{
-		testUniGrams.ExtractLhtc(*vecTestDocument[i], allTestFeatures.mFeatures[i]);
+		uniGrams.ExtractLhtc(*vecTestDocument[i], allTestFeatures.mFeatures[i]);
 		if (allTestFeatures.mFeatures[i].size() == 0) printf("%d Warning!!\n", i);
 	}
 	allTestFeatures.Normalize();//get testdata feature

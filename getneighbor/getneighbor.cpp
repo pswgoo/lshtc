@@ -70,32 +70,27 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 #pragma omp parallel for schedule(dynamic)
 	for (int i = 0; i < testsetsize; i++)
 	{
-		if (i & 32767 == 0)
+		if ((i & 32767) == 0)
 			clog << i << "th feature calc" << endl;
-		vector<double> tempsimlar, tempcalc;
+		vector<double> tempsimlar;
 		vector<int> tempsimlarID;
+		double tempcalc;
+		map<double, int> tempsorted;
 		tempsimlar.clear();
 		tempsimlarID.clear();
-		tempcalc.clear();
+		tempsorted.clear();
 		
 		for (int j = 0; j < trainsetsize; j++)
-			tempcalc.push_back(CalcSimilarity(trainset[j], testset[i]));//calc
-
-		for (int j = 0; j < Max_Remain_Neighbor; j++)
-			tempsimlar.push_back(-1.0), tempsimlarID.push_back(-1);
-		for (int j = 0; j < trainsetsize; j++)
 		{
-			int nowPos = Max_Remain_Neighbor - 1;
-			if (tempsimlar[nowPos] > tempcalc[j]) continue;
-			while (nowPos > 0)
-			{
-				if (tempsimlar[nowPos - 1] > tempcalc[j]) break;
-				tempsimlar[nowPos] = tempsimlar[nowPos - 1];
-				tempsimlarID[nowPos] = tempsimlarID[nowPos - 1];
-				nowPos--;
-			}
-			tempsimlar[nowPos] = tempcalc[j];
-			tempsimlarID[nowPos] = trainsetID[j];
+			tempcalc = CalcSimilarity(trainset[j], testset[i]);//calc
+			tempsorted.insert(pair<double, int>(-tempcalc, trainsetID[j]));
+		}
+
+		int nowPos = 0;
+		for (map<double, int>::iterator it = tempsorted.begin(); it != tempsorted.end(); ++it)
+		{
+			tempsimlar.push_back(-(it->first));
+			tempsimlarID.push_back(it->second);
 		}
 		//if (i & 127 == 0) printf("\n%d testset feature calc", i);
 		mSimilarity[i] = tempsimlar;
