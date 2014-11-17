@@ -106,7 +106,7 @@ int MetalabelTrainModel(const string featureFile, const string pmidMeshFile, con
 
 	int numThreads = omp_get_num_procs();
 	clog << "CPU number: " << numThreads << endl;
-	omp_set_num_threads(numThreads);
+	omp_set_num_threads(numThreads/2);
 
 	vector<int> vecPosNum, vecNegNum;
 	vecPosNum.resize(trainMeshIdVector.size());
@@ -238,12 +238,12 @@ int main()
 	CHECK_RTN(rtn);
 	//clog << "Save features completed" << endl;
 
-	//clog << "Metalabel models train" << endl;
-	//rtn = MetaLabelNewTrain1(gNewTrainFeatureFile, gPmidMeshFile, gLabelFreqFile, MODLE_NUM, POS_CITATION_NUM, POS_SAMPLE_NUM, NEG_CITATION_NUM, false, "../models_1109");//testmodels/train_parameters/L2R_L2LOSS_SVC_DUAL
+	clog << "Metalabel models train" << endl;
+	rtn = MetaLabelNewTrain1(gNewTrainFeatureFile, gPmidMeshFile, gLabelFreqFile, MODLE_NUM, POS_CITATION_NUM, POS_SAMPLE_NUM, NEG_CITATION_NUM, false, "../models_1109");//testmodels/train_parameters/L2R_L2LOSS_SVC_DUAL
 	CHECK_RTN(rtn);
 
-	clog << "Metalabel number model train" << endl;
-	rtn = MetaLabelNumModelTrain("../data/loc_train.bin", gUnigramFile, "../models_1109/numlabel_1109.model");
+	//clog << "Metalabel number model train" << endl;
+	//rtn = MetaLabelNumModelTrain("../data/loc_train.bin", gUnigramFile, "../models_1109/numlabel_1109.model");
 	clog << "Complete" << endl;
 	return 0;
 }
