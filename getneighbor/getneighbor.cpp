@@ -1,6 +1,8 @@
 #include "getneighbor.h"
 #include "common/common_basic.h"
 #include "common/file_utility.h"
+#include <queue>
+#include <functional>
 using namespace std;
 
 int FeatureNeighbor::Max_Remain_Neighbor = 300;
@@ -73,7 +75,6 @@ void neighborSorted(vector<pair<double, int> >::iterator neighborL, vector<pair<
 	if (i < Rpos) neighborSorted(tempL, neighborR, i, Rpos, topK);
 }
 
-
 int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::vector<std::map<int, double> > testset, std::vector<int> trainsetID, std::vector<int> testsetID, int printLog)
 {
 	std::vector<std::vector<double> > temptrainset, temptestset;
@@ -93,36 +94,36 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 	omp_set_num_threads(numThreads);
 	clog << "Start Parallel Extract Features" << endl;
 
+	typedef priority_queue<pair<double, int>, vector<pair<double, int>>, greater<pair<double, int>>> Priority_Queue;
 #pragma omp parallel for schedule(dynamic)
 	for (int i = 0; i < testsetsize; i++)
 	{
-		if ((i & 32767) == 0)
+		if ((i & 255) == 0)
 			clog << i << "th feature calc" << endl;
-		vector<double> tempsimlar;
-		vector<int> tempsimlarID;
-		double tempcalc;
-		vector<pair<double, int> >tempsorted;
-		tempsimlar.clear();
-		tempsimlarID.clear();
-		tempsorted.clear();
 
+		Priority_Queue heap;
+		double tempcalc;
 		for (int j = 0; j < trainsetsize; j++)
 		{
 			tempcalc = CalcSimilarity(trainset[j], testset[i]);//calc
-			tempsorted.push_back(pair<double, int>(tempcalc, trainsetID[j]));
+			if (heap.size() < Max_Remain_Neighbor || heap.top().first < tempcalc)
+			{
+				heap.push(make_pair(tempcalc, trainsetID[j]));
+				while (heap.size() > Max_Remain_Neighbor)
+					heap.pop();
+			}
 		}
-
-		vector<pair<double, int> >::iterator neighborl = tempsorted.begin();
-		neighborSorted(tempsorted.begin(), --tempsorted.end(), 0, trainsetsize - 1, Max_Remain_Neighbor);
-
-		int nowPos = 0;
-		for (int j = 0; j < Max_Remain_Neighbor; j++)
+		
+		mSimilarity[i].resize(heap.size());
+		mNeighbor[i].resize(heap.size());
+		int cur = (int)heap.size() - 1;
+		while (!heap.empty())
 		{
-			tempsimlar.push_back(tempsorted[j].first);
-			tempsimlarID.push_back(tempsorted[j].second);
+			mSimilarity[i][cur] = heap.top().first;
+			mNeighbor[i][cur] = heap.top().second;
+			--cur;
+			heap.pop();
 		}
-		mSimilarity[i] = tempsimlar;
-		mNeighbor[i] = tempsimlarID;
 	}//get the topK
 
 	return 0;
