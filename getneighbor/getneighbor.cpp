@@ -49,6 +49,31 @@ double FeatureNeighbor::CalcSimilarity(const Feature& feature1, const Feature& f
 	return temp;
 }
 
+void neighborSorted(vector<pair<double, int> >::iterator neighborL, vector<pair<double, int> >::iterator neighborR, int Lpos, int Rpos, int topK)
+{
+	if (Lpos >= topK) return;
+	vector<pair<double, int> >::iterator tempL, tempR;
+	tempL = neighborL, tempR = neighborR;
+	int i, j;
+	double mid;
+	i = Lpos, j = Rpos, mid = 0.5 * ((*neighborL).first + (*neighborR).first);
+	while (i <= j)
+	{
+		while ((*tempL).first > mid) ++i, ++tempL;
+		while ((*tempR).first < mid) --j, --tempR;
+		if (i <= j)
+		{
+			swap((*tempL).first, (*tempR).first);
+			swap((*tempL).second, (*tempR).second);
+			++i, ++tempL;
+			--j, --tempR;
+		}
+	}
+	if (Lpos < j) neighborSorted(neighborL, tempR, Lpos, j, topK);
+	if (i < Rpos) neighborSorted(tempL, neighborR, i, Rpos, topK);
+}
+
+
 int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::vector<std::map<int, double> > testset, std::vector<int> trainsetID, std::vector<int> testsetID, int printLog)
 {
 	std::vector<std::vector<double> > temptrainset, temptestset;
@@ -67,6 +92,7 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 
 	omp_set_num_threads(numThreads);
 	clog << "Start Parallel Extract Features" << endl;
+
 #pragma omp parallel for schedule(dynamic)
 	for (int i = 0; i < testsetsize; i++)
 	{
@@ -75,27 +101,30 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 		vector<double> tempsimlar;
 		vector<int> tempsimlarID;
 		double tempcalc;
-		map<double, int> tempsorted;
+		vector<pair<double, int> >tempsorted;
 		tempsimlar.clear();
 		tempsimlarID.clear();
 		tempsorted.clear();
-		
+
 		for (int j = 0; j < trainsetsize; j++)
 		{
 			tempcalc = CalcSimilarity(trainset[j], testset[i]);//calc
-			tempsorted.insert(pair<double, int>(-tempcalc, trainsetID[j]));
+			tempsorted.push_back(pair<double, int>(tempcalc, trainsetID[j]));
 		}
 
+		vector<pair<double, int> >::iterator neighborl = tempsorted.begin();
+		neighborSorted(tempsorted.begin(), --tempsorted.end(), 0, trainsetsize - 1, Max_Remain_Neighbor);
+
 		int nowPos = 0;
-		for (map<double, int>::iterator it = tempsorted.begin(); it != tempsorted.end(); ++it)
+		for (int j = 0; j < Max_Remain_Neighbor; j++)
 		{
-			tempsimlar.push_back(-(it->first));
-			tempsimlarID.push_back(it->second);
+			tempsimlar.push_back(tempsorted[j].first);
+			tempsimlarID.push_back(tempsorted[j].second);
 		}
-		//if (i & 127 == 0) printf("\n%d testset feature calc", i);
 		mSimilarity[i] = tempsimlar;
 		mNeighbor[i] = tempsimlarID;
 	}//get the topK
+
 	return 0;
 }
 
