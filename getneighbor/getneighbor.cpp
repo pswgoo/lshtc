@@ -88,6 +88,9 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 	mSimilarity.resize(testsetsize);
 	mNeighbor.resize(testsetsize);
 
+	for (int i = 0; i < testsetsize; i++)
+		mTransID.insert(pair<int, int>(testsetID[i], i));
+
 	int numThreads = omp_get_num_procs();
 	clog << "CPU number: " << numThreads << endl;
 
