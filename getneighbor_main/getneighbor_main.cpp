@@ -89,5 +89,6 @@ int main()
 	rtn = featureneighbor.SaveBin("lshtc_neighbor.bin");
 	CHECK_RTN(rtn);
 
+	clog << "Completed" << endl;
 	return 0;
 }
