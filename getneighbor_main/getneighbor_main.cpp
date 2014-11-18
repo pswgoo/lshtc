@@ -75,19 +75,35 @@ int main()
 	allTestFeatures.Normalize();//get testdata feature
 
 	FeatureNeighbor featureneighbor;
-	rtn = featureneighbor.Build(allTrainFeatures.mFeatures, allTestFeatures.mFeatures, lshtcTrainFeatureID, lshtcTestFeatureID);
+	//rtn = featureneighbor.Build(allTrainFeatures.mFeatures, allTestFeatures.mFeatures, lshtcTrainFeatureID, lshtcTestFeatureID);
 	CHECK_RTN(rtn);
+
+	//rtn = featureneighbor.SaveBin("lshtc_neighbor.bin", STATUS_ONLY);
+	CHECK_RTN(rtn);
+	clog << "Save bin completed" << endl;
+
+	rtn = featureneighbor.LoadBin("lshtc_neighbor.bin", STATUS_ONLY);
+	CHECK_RTN(rtn);
+	clog << "Load bin completed" << endl;
 
 	vector<int> testNeighbor;
 	vector<double> testSimilarity;
-	int testtopK = 10;
-	rtn = featureneighbor.GetNeighbor(lshtcTestFeatureID[0], testtopK, testNeighbor, testSimilarity);
-	for (int i = 0; i < testtopK; i++)
-		printf("\n%d %lf", testNeighbor[i], testSimilarity[i]);
-	CHECK_RTN(rtn);
-	
-	rtn = featureneighbor.SaveBin("lshtc_neighbor.bin");
-	CHECK_RTN(rtn);
+	int testtopK = 300;
+	int testNum = 50;
+	FILE* outFile = fopen("neighbor.txt", "w");
+	for (int i = 0; i < testNum; ++i)
+	{
+		rtn = featureneighbor.GetNeighbor(lshtcTestFeatureID[i], testtopK, testNeighbor, testSimilarity);
+		CHECK_RTN(rtn);
+		clog << "Get neighbor completed" << endl;
+		fprintf(outFile, "%d", lshtcTestFeatureID[i]);
+		for (int j = 0; j < testtopK; j++)
+			fprintf(outFile, " %d:%lf", testNeighbor[j], testSimilarity[j]);
+		fprintf(outFile, "\n");
+	}
+	fclose(outFile);
+
+//	outFile
 
 	clog << "Completed" << endl;
 	return 0;

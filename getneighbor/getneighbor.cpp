@@ -99,7 +99,7 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 
 	typedef priority_queue<pair<double, int>, vector<pair<double, int>>, greater<pair<double, int>>> Priority_Queue;
 #pragma omp parallel for schedule(dynamic)
-	for (int i = 0; i < testsetsize; i++)
+	for (int i = 0; i < 100; i++)
 	{
 		if ((i & 255) == 0)
 			clog << i << "th feature calc" << endl;
@@ -128,7 +128,7 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 			heap.pop();
 		}
 	}//get the topK
-
+	clog << "Build completed" << endl;
 	return 0;
 }
 
@@ -184,16 +184,22 @@ int FeatureNeighbor::LoadBin(std::string fileName, int printLog)
 
 	int rtn = 0;
 	FILE *inFile = fopen(fileName.c_str(), "rb");
-	
+	if (inFile != NULL)
+		clog << "Open " << fileName << endl;
+	else
+		clog << fileName << "open failed" << endl;
 	Read(inFile, mTransID);
 	CHECK_RTN(rtn);
-	
+	clog << "Load mTransID:"<< mTransID.size() << endl;
 	Read(inFile, mNeighbor);
 	CHECK_RTN(rtn);
-
+	clog << "Load mNeighbor" << endl;
 	Read(inFile, mSimilarity);
 	CHECK_RTN(rtn);
-	
+	clog << "Load mSimilarity" << endl;
+
+	fclose(inFile);
+
 	if (printLog != SILENT)
 		clog << "Load successful!" << endl;
 
@@ -213,6 +219,8 @@ int FeatureNeighbor::SaveBin(std::string fileName, int printLog)
 
 	Write(outfile, mSimilarity);
 	CHECK_RTN(rtn);
+
+	fclose(outfile);
 
 	if (printLog != SILENT)
 		clog << "Save successful!" << endl;
