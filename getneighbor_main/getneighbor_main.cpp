@@ -13,8 +13,8 @@ int main()
 	int rtn = 0;
 	LhtcDocumentSet lshtcTrainSet, lshtcTestSet;
 	UniGramFeature uniGrams;
-	string trainsetFile = "F:\\lshtc\\data\\loc_train.bin";
-	string testsetFile = "F:\\lshtc\\data\\loc_test.bin";
+	string trainsetFile = "../data/loc_train.bin";
+	string testsetFile = "../data/loc_test.bin";
 	vector<Feature> lshtcTrainFeatureSet, lshtcTestFeatureSet;
 	vector<int> lshtcTrainFeatureID, lshtcTestFeatureID;
 	Feature tempFeature;
@@ -24,7 +24,7 @@ int main()
 	lshtcTestFeatureID.clear();
 
 	clog << "Load Unigram Dictionary" << endl;
-	rtn = uniGrams.Load("F:\\lshtc\\work\\lshtc_unigram_dictionary_loctrain.bin");
+	rtn = uniGrams.Load("lshtc_unigram_dictionary_loctrain.bin");
 	CHECK_RTN(rtn);
 	clog << "Total " << uniGrams.mDictionary.size() << " unigrams" << endl;
 	
@@ -74,14 +74,29 @@ int main()
 	}
 	allTestFeatures.Normalize();//get testdata feature
 
-	FeatureNeighbor featureneighbor;
-	//rtn = featureneighbor.Build(allTrainFeatures.mFeatures, allTestFeatures.mFeatures, lshtcTrainFeatureID, lshtcTestFeatureID);
-	CHECK_RTN(rtn);
+	int sigSize = allTestFeatures.Size() / 5;
+	for (int i = 0; i < 5; ++i)
+	{
+		string filename = "../data/lshtc_neighbor" + intToString(i) + ".bin";
+		if (FileExist(filename))
+			continue;
+		clog << i << "th, sigSize = " << sigSize << endl;
+		FeatureSet locFeatures;
+		vector<int> locIds;
+		for (int j = sigSize*i; j < sigSize*(i + 1); ++j)
+		{
+			locFeatures.AddInstance(allTestFeatures[j]);
+			locIds.push_back(lshtcTestFeatureID[j]);
+		}
+		FeatureNeighbor featureneighbor;
+		rtn = featureneighbor.Build(allTrainFeatures.mFeatures, allTestFeatures.mFeatures, lshtcTrainFeatureID, lshtcTestFeatureID);
+		CHECK_RTN(rtn);
 
-	//rtn = featureneighbor.SaveBin("lshtc_neighbor.bin", STATUS_ONLY);
-	CHECK_RTN(rtn);
-	clog << "Save bin completed" << endl;
-
+		rtn = featureneighbor.SaveBin(filename, STATUS_ONLY);
+		CHECK_RTN(rtn);
+		clog << "Save bin completed" << endl;
+	}
+	/*//Ä£¿é²âÊÔ
 	rtn = featureneighbor.LoadBin("lshtc_neighbor.bin", STATUS_ONLY);
 	CHECK_RTN(rtn);
 	clog << "Load bin completed" << endl;
@@ -95,7 +110,6 @@ int main()
 	{
 		rtn = featureneighbor.GetNeighbor(lshtcTestFeatureID[i], testtopK, testNeighbor, testSimilarity);
 		CHECK_RTN(rtn);
-		clog << "Get neighbor completed" << endl;
 		fprintf(outFile, "%d", lshtcTestFeatureID[i]);
 		for (int j = 0; j < testtopK; j++)
 			fprintf(outFile, " %d:%lf", testNeighbor[j], testSimilarity[j]);
@@ -103,8 +117,35 @@ int main()
 	}
 	fclose(outFile);
 
-//	outFile
-
+	map<int, int> indexs;
+	int cur = 0;
+	for (auto it = lshtcTrainSet.mLhtcDocuments.begin(); it != lshtcTrainSet.mLhtcDocuments.end(); ++it)
+		indexs[it->first] = cur++;
+	map<int, int> indexs2;
+	cur = 0;
+	for (auto it = lshtcTestSet.mLhtcDocuments.begin(); it != lshtcTestSet.mLhtcDocuments.end(); ++it)
+		indexs2[it->first] = cur++;
+	outFile = fopen("feature_tmp.txt", "w");
+	vector<int> list = { 147, 238 };
+	for (int i = 0; i < list.size(); ++i)
+	{
+		fprintf(outFile, "%d", list[i]);
+		for (auto it = allTestFeatures.mFeatures[indexs2[list[i]]].begin(); it != allTestFeatures.mFeatures[indexs2[list[i]]].end(); ++it)
+			fprintf(outFile, " %d:%lf", it->first, it->second);
+		fprintf(outFile, "\n");
+		rtn = featureneighbor.GetNeighbor(list[i], 10, testNeighbor);
+		CHECK_RTN(rtn);
+		for (int j = 0; j < testNeighbor.size(); ++j)
+		{
+			fprintf(outFile, "%d", testNeighbor[j]);
+			for (auto it = allTrainFeatures.mFeatures[indexs[testNeighbor[j]]].begin(); it != allTrainFeatures.mFeatures[indexs[testNeighbor[j]]].end(); ++it)
+				fprintf(outFile, " %d:%lf", it->first, it->second);
+			fprintf(outFile, "\n");
+		}
+		fprintf(outFile, "\n\n");
+	};
+	fclose(outFile);
+	*/
 	clog << "Completed" << endl;
 	return 0;
 }

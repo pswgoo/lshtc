@@ -47,7 +47,7 @@ double FeatureNeighbor::CalcSimilarity(const Feature& feature1, const Feature& f
 	}//get x * y
 	
 	if (modX < 1e-6 || modY < 1e-6) temp = 0.;
-	else temp = mulXY / modX / modY;
+	else temp = mulXY / (modX * modY);
 	return temp;
 }
 
@@ -99,7 +99,7 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 
 	typedef priority_queue<pair<double, int>, vector<pair<double, int>>, greater<pair<double, int>>> Priority_Queue;
 #pragma omp parallel for schedule(dynamic)
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < testsetsize; i++)
 	{
 		if ((i & 255) == 0)
 			clog << i << "th feature calc" << endl;
@@ -184,19 +184,15 @@ int FeatureNeighbor::LoadBin(std::string fileName, int printLog)
 
 	int rtn = 0;
 	FILE *inFile = fopen(fileName.c_str(), "rb");
-	if (inFile != NULL)
-		clog << "Open " << fileName << endl;
-	else
-		clog << fileName << "open failed" << endl;
+
 	Read(inFile, mTransID);
 	CHECK_RTN(rtn);
-	clog << "Load mTransID:"<< mTransID.size() << endl;
+
 	Read(inFile, mNeighbor);
 	CHECK_RTN(rtn);
-	clog << "Load mNeighbor" << endl;
+
 	Read(inFile, mSimilarity);
 	CHECK_RTN(rtn);
-	clog << "Load mSimilarity" << endl;
 
 	fclose(inFile);
 

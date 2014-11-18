@@ -1,5 +1,5 @@
 
-# include makefile basic and tools
+# include makefile basic
 include ../include_makefile/basic.mk
 include ../include_makefile/tools.mk
 

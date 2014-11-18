@@ -17,7 +17,7 @@ public:
 
 	int Clear();
 
-	double FeatureNeighbor::CalcSimilarity(const Feature& feature1, const Feature& feature2);
+	double CalcSimilarity(const Feature& feature1, const Feature& feature2);
 
 	int Build(std::vector<std::map<int, double> > trainset, std::vector<std::map<int, double> > testset, std::vector<int> trainsetID, std::vector<int> testsetID, int printLog = SILENT);
 

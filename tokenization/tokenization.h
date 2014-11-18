@@ -7,8 +7,6 @@ typedef	std::vector<std::vector<int> > Tokens;
 #define MAXLINE 100000
 
 std::string GetLine(char* buffer, FILE* file);
-int Write(FILE* binFile, Tokens &tokens);
-int Read(FileBuffer* buffer, Tokens &tokens);
 std::vector<std::string> SplitString(const std::string &string);
 
 
