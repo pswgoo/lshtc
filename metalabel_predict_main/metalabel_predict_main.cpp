@@ -3,6 +3,8 @@
 #include "classifier/classifier.h"
 #include "evaluation/tools.h"
 #include "tokenization/tokenization.h"
+#include "predict_basic.h"
+#include "knn_predict.h"
 #include <iostream>
 #include <omp.h>
 #include <algorithm>
@@ -140,26 +142,8 @@ int MetalabelPredict(string tokenFile, string unigramFile, string numlabelModelF
 	CHECK_RTN(rtn);
 	rtn = predictAnswers.SaveJsonSet("lshtc_loc_test_predict.json");
 	CHECK_RTN(rtn);
-	clog << "Begin Evaluation" << endl;
-	double precision = 0.0;
-	double recall = 0.0;
-	double f1 = 0.0;
 
-	FILE *outEvaluate = fopen("lshtc_result.txt", "w");
-	Evaluator evaluator;
-	evaluator.LabelBasedMicroEvaluate(predictAnswers, goldStandard, precision, recall, f1);
-	printf("micro: MIP=%lf,MIR=%lf,MIF=%lf\n", precision, recall, f1);
-	fprintf(outEvaluate, "micro: MIP=%lf,MIR=%lf,MIF=%lf\n", precision, recall, f1);
-
-	evaluator.ExampleBasedEvaluate(predictAnswers, goldStandard, precision, recall, f1, "./lshtc_example_analyse.csv");
-	printf("examp: EBP=%lf,EBR=%lf,EBF=%lf\n", precision, recall, f1);
-	fprintf(outEvaluate, "examp: EBP=%lf,EBR=%lf,EBF=%lf\n", precision, recall, f1);
-
-	evaluator.LabelBasedMacroEvaluate(predictAnswers, goldStandard, precision, recall, f1, "./lshtc_model_analyse.csv");//, "./ltr_model_analyse.csv"
-	printf("MAP=%lf,MAR=%lf,MAF=%lf\n", precision, recall, f1);
-	fprintf(outEvaluate, "MAP=%lf,MAR=%lf,MAF=%lf\n", precision, recall, f1);
-	fclose(outEvaluate);
-
+	Evaluate(goldStandard, predictAnswers, "metalabel_result.txt");
 	clog << "Predict completed" << endl;
 	return 0;
 }
@@ -167,7 +151,15 @@ int MetalabelPredict(string tokenFile, string unigramFile, string numlabelModelF
 int main()
 {
 	int rtn = 0;
-	rtn = MetalabelPredict("../data/loc_test.bin", "lshtc_unigram_dictionary_loctrain.bin", "../models_1109/numlabel_1109.model", "../store_tables/loc_test_predictscores.bin");
+	//rtn = MetalabelPredict("../data/loc_test.bin", "lshtc_unigram_dictionary_loctrain.bin", "../models_1109/numlabel_1109.model", "../store_tables/loc_test_predictscores.bin");
+	map<int, int> numlabel;
+	//rtn = NumlabelPredict("../models_1109/numlabel_1109.model", "../data/loc_test.bin", "lshtc_unigram_dictionary_loctrain.bin", numlabel);
 	CHECK_RTN(rtn);
+	//clog << "Write numlabel" << endl;
+	//WriteFile("loc_test_predict_numlabel.bin", numlabel);
+	clog << "Cosine Predict" << endl;
+	rtn = CosineKnnEvaluate("../data/loc_train.bin", "../data/loc_test_merge01.bin", "../data/lshtc_neighbor_merge01.bin", "loc_test_predict_numlabel.bin", "cosineknn_result_count.txt");
+	CHECK_RTN(rtn);
+	clog << "Cosine knn completed" << endl;
 	return 0;
 }

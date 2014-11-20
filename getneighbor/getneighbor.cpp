@@ -16,6 +16,15 @@ FeatureNeighbor::~FeatureNeighbor()
 {
 }
 
+bool FeatureNeighbor::CheckValid() const
+{
+	if (mTransID.size() != mSimilarity.size())
+		return false;
+	if (mSimilarity.size() != mNeighbor.size())
+		return false;
+	return true;
+}
+
 int FeatureNeighbor::Clear()
 {
 	mTransID.clear();
@@ -51,28 +60,30 @@ double FeatureNeighbor::CalcSimilarity(const Feature& feature1, const Feature& f
 	return temp;
 }
 
-void neighborSorted(vector<pair<double, int> >::iterator neighborL, vector<pair<double, int> >::iterator neighborR, int Lpos, int Rpos, int topK)
+int FeatureNeighbor::Merge(const FeatureNeighbor& neighbor)
 {
-	if (Lpos >= topK) return;
-	vector<pair<double, int> >::iterator tempL, tempR;
-	tempL = neighborL, tempR = neighborR;
-	int i, j;
-	double mid;
-	i = Lpos, j = Rpos, mid = 0.5 * ((*neighborL).first + (*neighborR).first);
-	while (i <= j)
+	if (!CheckValid() || !neighbor.CheckValid())
 	{
-		while ((*tempL).first > mid) ++i, ++tempL;
-		while ((*tempR).first < mid) --j, --tempR;
-		if (i <= j)
-		{
-			swap((*tempL).first, (*tempR).first);
-			swap((*tempL).second, (*tempR).second);
-			++i, ++tempL;
-			--j, --tempR;
-		}
+		cerr << "Error: check valid error, can't merge" << endl;
+		return -1;
 	}
-	if (Lpos < j) neighborSorted(neighborL, tempR, Lpos, j, topK);
-	if (i < Rpos) neighborSorted(tempL, neighborR, i, Rpos, topK);
+
+	int start = (int)mTransID.size();
+	for (map<int,int>::const_iterator it = neighbor.mTransID.cbegin(); it != neighbor.mTransID.cend(); ++it)
+	{
+		if (mTransID.count(it->first) > 0)
+		{
+			cerr << "Error: the id " << it->first << " has occured, can't merge" << endl;
+			return 0;
+		}
+		mTransID[it->first] = start + it->second;
+	}
+	for (size_t i = 0; i < neighbor.mNeighbor.size(); ++i)
+	{
+		mNeighbor.push_back(neighbor.mNeighbor[i]);
+		mSimilarity.push_back(neighbor.mSimilarity[i]);
+	}
+	return 0;
 }
 
 int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::vector<std::map<int, double> > testset, std::vector<int> trainsetID, std::vector<int> testsetID, int printLog)
@@ -222,4 +233,28 @@ int FeatureNeighbor::SaveBin(std::string fileName, int printLog)
 		clog << "Save successful!" << endl;
 
 	return 0;
+}
+
+void neighborSorted(vector<pair<double, int> >::iterator neighborL, vector<pair<double, int> >::iterator neighborR, int Lpos, int Rpos, int topK)
+{
+	if (Lpos >= topK) return;
+	vector<pair<double, int> >::iterator tempL, tempR;
+	tempL = neighborL, tempR = neighborR;
+	int i, j;
+	double mid;
+	i = Lpos, j = Rpos, mid = 0.5 * ((*neighborL).first + (*neighborR).first);
+	while (i <= j)
+	{
+		while ((*tempL).first > mid) ++i, ++tempL;
+		while ((*tempR).first < mid) --j, --tempR;
+		if (i <= j)
+		{
+			swap((*tempL).first, (*tempR).first);
+			swap((*tempL).second, (*tempR).second);
+			++i, ++tempL;
+			--j, --tempR;
+		}
+	}
+	if (Lpos < j) neighborSorted(neighborL, tempR, Lpos, j, topK);
+	if (i < Rpos) neighborSorted(tempL, neighborR, i, Rpos, topK);
 }

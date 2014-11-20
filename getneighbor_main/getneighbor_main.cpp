@@ -8,7 +8,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int SaveNeighbor()
 {
 	int rtn = 0;
 	LhtcDocumentSet lshtcTrainSet, lshtcTestSet;
@@ -27,7 +27,7 @@ int main()
 	rtn = uniGrams.Load("lshtc_unigram_dictionary_loctrain.bin");
 	CHECK_RTN(rtn);
 	clog << "Total " << uniGrams.mDictionary.size() << " unigrams" << endl;
-	
+
 	rtn = lshtcTrainSet.LoadBin(trainsetFile, FULL_LOG);
 	CHECK_RTN(rtn);
 
@@ -89,15 +89,60 @@ int main()
 			locIds.push_back(lshtcTestFeatureID[j]);
 		}
 		FeatureNeighbor featureneighbor;
-		rtn = featureneighbor.Build(allTrainFeatures.mFeatures, allTestFeatures.mFeatures, lshtcTrainFeatureID, lshtcTestFeatureID);
+		rtn = featureneighbor.Build(allTrainFeatures.mFeatures, locFeatures.mFeatures, lshtcTrainFeatureID, locIds);
 		CHECK_RTN(rtn);
 
 		rtn = featureneighbor.SaveBin(filename, STATUS_ONLY);
 		CHECK_RTN(rtn);
 		clog << "Save bin completed" << endl;
 	}
-	/*//Ä£¿é²âÊÔ
-	rtn = featureneighbor.LoadBin("lshtc_neighbor.bin", STATUS_ONLY);
+
+	return 0;
+}
+
+int NeighborTest()
+{
+	int rtn = 0;
+	string neighborFile = "../data/lshtc_neighbor1.bin";
+	string lshtcFile = "../data/loc_test_merge01.bin";
+
+	LhtcDocumentSet lshtcSet;
+//	rtn = lshtcSet.LoadBin(lshtcFile);
+	CHECK_RTN(rtn);
+
+	FeatureNeighbor neighbor;
+	rtn = neighbor.LoadBin(neighborFile);
+	CHECK_RTN(rtn);
+
+	vector<int> docIds = { 708827, 738745, 768394, 797724, 827088, 856201, 885858, 915454 };
+	//for (map<int, LhtcDocument>::iterator it = lshtcSet.mLhtcDocuments.begin(); it != lshtcSet.mLhtcDocuments.end(); ++it)
+		//docIds.push_back(it->first);
+
+	FILE* outFile = fopen("neighbor_tmp1.txt", "w");
+	int cur = 0;
+	for (size_t i = 0; i < docIds.size(); ++i)
+	{
+		vector<int> neighbors;
+		vector<double> similarities;
+		rtn = neighbor.GetNeighbor(docIds[i], 100, neighbors, similarities);
+		CHECK_RTN(rtn);
+		
+		if (cur % 1 == 0)
+		{
+			fprintf(outFile, "%d", docIds[i]);
+			for (int j = 0; j < neighbors.size(); ++j)
+			{
+				fprintf(outFile, " %d:%lf", neighbors[j], similarities[j]);
+			}
+			fprintf(outFile, "\n");
+		}
+		++cur;
+	}
+	fclose(outFile);
+
+	/*
+	FeatureNeighbor featureneighbor;
+	rtn = featureneighbor.LoadBin(neighborFile, STATUS_ONLY);
 	CHECK_RTN(rtn);
 	clog << "Load bin completed" << endl;
 
@@ -146,6 +191,49 @@ int main()
 	};
 	fclose(outFile);
 	*/
+	clog << "Test complete" << endl;
+	return 0;
+}
+
+int Merge()
+{
+	int rtn = 0;
+	FeatureNeighbor neighbor1;
+	FeatureNeighbor neighbor2;
+	rtn = neighbor1.LoadBin("../data/lshtc_neighbor0.bin");
+	CHECK_RTN(rtn);
+	rtn = neighbor2.LoadBin("../data/lshtc_neighbor1.bin");
+	CHECK_RTN(rtn);
+
+	neighbor1.Merge(neighbor2);
+	rtn = neighbor1.SaveBin("../data/lshtc_neighbor_merge01.bin");
+	CHECK_RTN(rtn);
+
+	LhtcDocumentSet locTest;
+	rtn = locTest.LoadBin("../data/loc_test.bin", STATUS_ONLY);
+	CHECK_RTN(rtn);
+
+	const int FIRST_NUM = 160000;
+	LhtcDocumentSet first2;
+	for (map<int, LhtcDocument>::iterator it = locTest.mLhtcDocuments.begin(); it != locTest.mLhtcDocuments.end(); ++it)
+	{
+		if (first2.Size() >= FIRST_NUM)
+			break;
+		first2.mLhtcDocuments[it->first] = it->second;
+	}
+
+	rtn = first2.SaveBin("../data/loc_test_merge01.bin");
+	CHECK_RTN(rtn);
+	
+	clog << "Merge complete" << endl;
+	return 0;
+}
+
+int main()
+{
+	int rtn = 0;
+	rtn = NeighborTest();
+	CHECK_RTN(rtn);
 	clog << "Completed" << endl;
 	return 0;
 }

@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="knn_predict.cpp" />
     <ClCompile Include="metalabel_predict_main.cpp" />
+    <ClCompile Include="predict_basic.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\classifier\classifier.vcxproj">
@@ -139,12 +141,19 @@
     <ProjectReference Include="..\extractfeature\extractfeature.vcxproj">
       <Project>{7788de96-aded-48c9-b8bb-6a271d2eb1a3}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\getneighbor\getneighbor.vcxproj">
+      <Project>{73e407fb-0731-4165-804a-5c51c10866e5}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\liblinear\liblinear.vcxproj">
       <Project>{59d0faed-15f4-456f-9ae0-859ee5d093dd}</Project>
     </ProjectReference>
     <ProjectReference Include="..\lshtc_lib\lshtc_lib.vcxproj">
       <Project>{fa6dfa1b-bbf2-4802-85a5-25dcfadf4d60}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="knn_predict.h" />
+    <ClInclude Include="predict_basic.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
