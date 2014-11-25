@@ -1,13 +1,13 @@
 
 # Subdirs to search for additional source files
 SUBDIRS ?= $(shell ls -F | grep "\/" )
-DIRS ?= ./ $(SUBDIRS) 
+DIRS ?= ./ $(SUBDIRS)
 CXX_SOURCE_FILES ?= $(foreach d, $(DIRS), $(wildcard $(d)*.cpp))
 CC_SOURCE_FILES ?= $(foreach d, $(DIRS), $(wildcard $(d)*.c))
 
 # Create an object file of every .cpp file
 CPP_OBJECTS ?= $(filter-out $(FILTER_OBJECT), $(patsubst %.cpp, %.cpp.o, $(CXX_SOURCE_FILES)))
-# Create an object file of every .c file  
+# Create an object file of every .c file
 CC_OBJECTS ?= $(filter-out $(FILTER_OBJECT), $(patsubst %.c, %.c.o, $(CC_SOURCE_FILES)))
 
 # Create dependent file for each object file
@@ -20,7 +20,7 @@ LIB_REFERENCES += $(call CALL_MAKEFILES,$(call GET_BASENAMES,$(DIRECT_REFER)),$(
 LIB_REFERENCES := $(sort $(LIB_REFERENCES))
 
 .PHONY: all
-# Make $(PRO_EXE) $(PRO_LIB) the default target 
+# Make $(PRO_EXE) $(PRO_LIB) the default target
 all: $(PRO_EXE) $(PRO_LIB) $(LIB_REFERENCES)
 
 # Use -Xlinker to ignore  the library refer order
@@ -47,7 +47,7 @@ $(PRO_LIB): $(CPP_OBJECTS) $(CC_OBJECTS)
 # Compile every c file to an object
 %.c.o: %.c
 	$(CC) -c $(CC_FLAGS) $(INCS) -o $@ $<
-	
+
 # Generate header dependence file: *.d for each *.c
 %.c.d: %.c
 	@set -e; rm -f $@; \

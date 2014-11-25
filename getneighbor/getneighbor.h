@@ -15,6 +15,9 @@ public:
 	std::vector<std::vector<double> > mSimilarity;
 
 public:
+	static double CalcSimilarity(const Feature& feature1, const Feature& feature2);
+
+public:
 	FeatureNeighbor();
 	~FeatureNeighbor();
 
@@ -22,17 +25,15 @@ public:
 
 	int Clear();
 
-	double CalcSimilarity(const Feature& feature1, const Feature& feature2);
-
 	int Merge(const FeatureNeighbor& neighbor);
 
 	int Build(std::vector<std::map<int, double> > trainset, std::vector<std::map<int, double> > testset, std::vector<int> trainsetID, std::vector<int> testsetID, int printLog = SILENT);
 
-	int GetNeighbor(int testID, int topK, std::vector<int>& neighborID);
+	int GetNeighbor(int testID, int topK, std::vector<int>& neighborID) const;
 
-	int GetNeighbor(int testID, int topK, std::vector<int>& neighborID, std::vector<double>& neighborSimilarity);
+	int GetNeighbor(int testID, int topK, std::vector<int>& neighborID, std::vector<double>& neighborSimilarity) const;
 
-	int SaveBin(std::string fileName, int printLog = SILENT);
+	int SaveBin(std::string fileName, int printLog = SILENT) const;
 
 	int LoadBin(std::string fileName, int printLog = SILENT);
 

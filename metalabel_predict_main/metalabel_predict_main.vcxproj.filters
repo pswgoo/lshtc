@@ -24,12 +24,18 @@
     <ClCompile Include="predict_basic.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="multilabel_knn_predict.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="knn_predict.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="predict_basic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="multilabel_knn_predict.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
