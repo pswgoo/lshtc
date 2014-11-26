@@ -24,6 +24,7 @@ int MultinomialNaiveBayes::Clear()
 	mPossiblity.clear();
 	mInverseTable.clear();
 	mLabelsWordCnt.clear();
+	return 0;
 }
 
 int MultinomialNaiveBayes::Load(std::string fileName, int printLog)
@@ -54,6 +55,13 @@ int MultinomialNaiveBayes::Load(std::string fileName, int printLog)
 
 	Read(infile, mLabelsWordCnt);
 	CHECK_RTN(rtn);
+
+	fclose(infile);
+
+	if (printLog != SILENT)
+		std::clog << "Load successful!" << std::endl;
+
+	return 0;
 }
 
 int MultinomialNaiveBayes::Save(std::string fileName, int printLog)
@@ -84,6 +92,13 @@ int MultinomialNaiveBayes::Save(std::string fileName, int printLog)
 
 	Write(outfile, mLabelsWordCnt);
 	CHECK_RTN(rtn);
+	
+	fclose(outfile);
+
+	if (printLog != SILENT)
+		std::clog << "Save successful!" << std::endl;
+
+	return 0;
 }
 
 int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trainSet, const std::vector<std::vector<int> >& trainLabels, int printLog)
@@ -111,7 +126,7 @@ int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trai
 
 	for (int i = 0; i < mInstanceSize; i++)
 	{
-		int tempLabelSize = trainLabels[i].size();
+		int tempLabelSize = (int)trainLabels[i].size();
 		for (int j = 0; j < tempLabelSize; j++)
 		{
 			int tempLabel = trainLabels[i][j];
@@ -132,7 +147,7 @@ int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trai
 	mInverseTable.resize(tempFeatureID);
 	for (int i = 0; i < mInstanceSize; i++)
 	{
-		int tempLabelSize = trainLabels[i].size();
+		int tempLabelSize = (int)trainLabels[i].size();
 		for (int j = 0; j < tempLabelSize; j++)
 		{
 			int tempLabel = trainLabels[i][j];
@@ -181,7 +196,7 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<int>
 			continue;//valid
 		double temp = 0;
 		temp = log(std::max(1.0, double(mInstanceSize) / double(mAppearFeatures[it->first] - 1)));//log[max(1,D/Dn-1)]
-		temp *= log(1 + it->second);
+		temp *= log(1. + it->second);
 		temp /= featureSize;//log[1+Wnu]/S(Wu)
 		Wn.push_back(temp);//get Wn
 
@@ -190,7 +205,7 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<int>
 			labelList.insert(*iter);//get labelList
 	}
 
-	int totFeatures = mAppearFeatures.size();
+	int totFeatures = (int)mAppearFeatures.size();
 	for (std::set<int>::iterator it = labelList.begin(); it != labelList.end(); ++it)
 	{
 		double temp = 0;
@@ -261,7 +276,7 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<std:
 			labelList.insert(*iter);//get labelList
 	}
 
-	int totFeatures = mAppearFeatures.size();
+	int totFeatures = (int)mAppearFeatures.size();
 	for (std::set<int>::iterator it = labelList.begin(); it != labelList.end(); ++it)
 	{
 		double temp = 0;
