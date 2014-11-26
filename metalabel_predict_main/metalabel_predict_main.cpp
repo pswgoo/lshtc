@@ -5,6 +5,7 @@
 #include "tokenization/tokenization.h"
 #include "predict_basic.h"
 #include "knn_predict.h"
+#include "multilabel_knn_predict.h"
 #include <iostream>
 #include <omp.h>
 #include <algorithm>
@@ -158,7 +159,8 @@ int main()
 	//clog << "Write numlabel" << endl;
 	//WriteFile("loc_test_predict_numlabel.bin", numlabel);
 	clog << "Cosine Predict" << endl;
-	rtn = CosineKnnEvaluate("../data/loc_train.bin", "../data/loc_test_merge01.bin", "../data/lshtc_neighbor_merge01.bin", "loc_test_predict_numlabel.bin", "cosineknn_result_count.txt");
+	//rtn = CosineKnnEvaluate("../data/loc_train.bin", "../data/loc_test_merge01.bin", "../data/lshtc_neighbor_merge01.bin", "loc_test_predict_numlabel.bin", "cosineknn_result_count.txt");
+	rtn = MultilabelKnnEvaluate("ml_knn_merge234_k3.bin", "../data/loc_test_merge01.bin", "../data/lshtc_neighbor_merge01.bin", "loc_test_predict_numlabel.bin", "mlknn_result_numlabel.txt");
 	CHECK_RTN(rtn);
 	clog << "Cosine knn completed" << endl;
 	return 0;

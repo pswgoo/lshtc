@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="getneighbor.h" />
+    <ClInclude Include="ml_knn.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="getneighbor.cpp" />
+    <ClCompile Include="ml_knn.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\common\common.vcxproj">

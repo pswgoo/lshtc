@@ -3,7 +3,10 @@
 #include <cmath>
 #include <queue>
 #include <functional>
+<<<<<<< HEAD
 using namespace std;
+=======
+>>>>>>> 8a309bb5013a61720611ecbdef59305b9fc02724
 
 MultinomialNaiveBayes::MultinomialNaiveBayes()
 {
@@ -86,7 +89,11 @@ int MultinomialNaiveBayes::Save(std::string fileName, int printLog)
 	CHECK_RTN(rtn);
 }
 
+<<<<<<< HEAD
 int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trainSet, const std::vector<std::vector<int> >& trainLabels, int printLog)
+=======
+int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trainSet, const std::vector<std::vector<int> >& trainLabels, int printLog = SILENT)
+>>>>>>> 8a309bb5013a61720611ecbdef59305b9fc02724
 {
 	int tempFeatureID, tempLabelID;
 	tempFeatureID = 0;
@@ -180,13 +187,21 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<int>
 		if (mTransFeatures.find(it->first) == mTransFeatures.end())
 			continue;//valid
 		double temp = 0;
+<<<<<<< HEAD
 		temp = log(std::max(1.0, double(mInstanceSize) / double(mAppearFeatures[it->first] - 1)));//log[max(1,D/Dn-1)]
+=======
+		temp = log(std::max(1, mInstanceSize / mAppearFeatures[it->first] - 1));//log[max(1,D/Dn-1)]
+>>>>>>> 8a309bb5013a61720611ecbdef59305b9fc02724
 		temp *= log(1 + it->second);
 		temp /= featureSize;//log[1+Wnu]/S(Wu)
 		Wn.push_back(temp);//get Wn
 
 		int tempFeatureID = mTransFeatures.find(it->first)->second;
+<<<<<<< HEAD
 		for (std::set<int>::iterator iter = mInverseTable[tempFeatureID].begin(); iter != mInverseTable[tempFeatureID].end(); ++iter)
+=======
+		for (std::set<int>::iterator iter = mInverseTable[tempFeatureID].begin; iter != mInverseTable[tempFeatureID].end(); ++iter)
+>>>>>>> 8a309bb5013a61720611ecbdef59305b9fc02724
 			labelList.insert(*iter);//get labelList
 	}
 
@@ -196,7 +211,11 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<int>
 		double temp = 0;
 		int tempLabel = *it;
 		int tempLabelID = mTransLabels.find(tempLabel)->second;
+<<<<<<< HEAD
 		Pm = log(double(mAppearLabels[tempLabelID]) / double(mInstanceSize));//get Pm
+=======
+		Pm = log(mAppearLabels[tempLabelID] / mInstanceSize);//get Pm
+>>>>>>> 8a309bb5013a61720611ecbdef59305b9fc02724
 		int featurePos = 0;
 		for (Feature::const_iterator iter = testInstance.begin(); iter != testInstance.end(); ++iter)
 		{
@@ -251,13 +270,21 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<std:
 		if (mTransFeatures.find(it->first) == mTransFeatures.end())
 			continue;//valid
 		double temp = 0;
+<<<<<<< HEAD
 		temp = log(std::max(1.0, double(mInstanceSize) / double(mAppearFeatures[it->first] - 1)));//log[max(1,D/Dn-1)]
+=======
+		temp = log(std::max(1, mInstanceSize / mAppearFeatures[it->first] - 1));//log[max(1,D/Dn-1)]
+>>>>>>> 8a309bb5013a61720611ecbdef59305b9fc02724
 		temp *= log(1 + it->second);
 		temp /= featureSize;//log[1+Wnu]/S(Wu)
 		Wn.push_back(temp);//get Wn
 
 		int tempFeatureID = mTransFeatures.find(it->first)->second;
+<<<<<<< HEAD
 		for (std::set<int>::iterator iter = mInverseTable[tempFeatureID].begin(); iter != mInverseTable[tempFeatureID].end(); ++iter)
+=======
+		for (std::set<int>::iterator iter = mInverseTable[tempFeatureID].begin; iter != mInverseTable[tempFeatureID].end(); ++iter)
+>>>>>>> 8a309bb5013a61720611ecbdef59305b9fc02724
 			labelList.insert(*iter);//get labelList
 	}
 
@@ -267,7 +294,11 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<std:
 		double temp = 0;
 		int tempLabel = *it;
 		int tempLabelID = mTransLabels.find(tempLabel)->second;
+<<<<<<< HEAD
 		Pm = log(double(mAppearLabels[tempLabelID]) / double(mInstanceSize));//get Pm
+=======
+		Pm = log(mAppearLabels[tempLabelID] / mInstanceSize);//get Pm
+>>>>>>> 8a309bb5013a61720611ecbdef59305b9fc02724
 		int featurePos = 0;
 		for (Feature::const_iterator iter = testInstance.begin(); iter != testInstance.end(); ++iter)
 		{

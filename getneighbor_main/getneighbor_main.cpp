@@ -4,6 +4,7 @@
 #include "common/common_basic.h"
 #include "extractfeature/feature.h"
 #include "metalabelnewtrain/metalabelnewtrain_lhtsc.h"
+#include "getneighbor/ml_knn.h"
 #include <fstream>
 #include <iostream>
 using namespace std;
@@ -200,13 +201,17 @@ int Merge()
 	int rtn = 0;
 	FeatureNeighbor neighbor1;
 	FeatureNeighbor neighbor2;
-	rtn = neighbor1.LoadBin("../data/lshtc_neighbor0.bin");
+	FeatureNeighbor neighbor3;
+	rtn = neighbor1.LoadBin("../data/lshtc_neighbor2.bin");
 	CHECK_RTN(rtn);
-	rtn = neighbor2.LoadBin("../data/lshtc_neighbor1.bin");
+	rtn = neighbor2.LoadBin("../data/lshtc_neighbor3.bin");
+	CHECK_RTN(rtn);
+	rtn = neighbor3.LoadBin("../data/lshtc_neighbor4.bin");
 	CHECK_RTN(rtn);
 
 	neighbor1.Merge(neighbor2);
-	rtn = neighbor1.SaveBin("../data/lshtc_neighbor_merge01.bin");
+	neighbor1.Merge(neighbor3);
+	rtn = neighbor1.SaveBin("../data/lshtc_neighbor_merge234.bin");
 	CHECK_RTN(rtn);
 
 	LhtcDocumentSet locTest;
@@ -215,14 +220,15 @@ int Merge()
 
 	const int FIRST_NUM = 160000;
 	LhtcDocumentSet first2;
-	for (map<int, LhtcDocument>::iterator it = locTest.mLhtcDocuments.begin(); it != locTest.mLhtcDocuments.end(); ++it)
+	int cnt = 0;
+	for (map<int, LhtcDocument>::iterator it = locTest.mLhtcDocuments.begin(); it != locTest.mLhtcDocuments.end(); ++it, ++cnt)
 	{
-		if (first2.Size() >= FIRST_NUM)
-			break;
+		if (cnt < FIRST_NUM)
+			continue;
 		first2.mLhtcDocuments[it->first] = it->second;
 	}
 
-	rtn = first2.SaveBin("../data/loc_test_merge01.bin");
+	rtn = first2.SaveBin("../data/loc_test_merge234.bin");
 	CHECK_RTN(rtn);
 	
 	clog << "Merge complete" << endl;
@@ -232,8 +238,30 @@ int Merge()
 int main()
 {
 	int rtn = 0;
-	rtn = NeighborTest();
+	//rtn = Merge();
+
+	map<int, vector<int>> train_labels;
+	map<int, vector<int>> test_labels;
+	LhtcDocumentSet train_set;
+	train_set.LoadBin("../data/loc_train.bin", STATUS_ONLY);
+	for (auto it = train_set.mLhtcDocuments.begin(); it != train_set.mLhtcDocuments.end(); ++it)
+		train_labels[it->first] = it->second.mLabels;
+	LhtcDocumentSet test_set;
+	test_set.LoadBin("../data/loc_test_merge234.bin");
+	for (auto it = test_set.mLhtcDocuments.begin(); it != test_set.mLhtcDocuments.end(); ++it)
+		test_labels[it->first] = it->second.mLabels;
+
+	FeatureNeighbor neighbors;
+	neighbors.LoadBin("../data/lshtc_neighbor_merge234.bin", FULL_LOG);
+
+	MultiLabelKnn ml_knn;
+	rtn = ml_knn.Initialize(train_labels, test_labels, neighbors);
 	CHECK_RTN(rtn);
+
+	rtn = ml_knn.Save("ml_knn_merge234_k3.bin", FULL_LOG);
+	CHECK_RTN(rtn);
+	//rtn = ml_knn.Load("ml_knn_merge234.bin", FULL_LOG);
+	//ml_knn.Save("tmp.bin", FULL_LOG);
 	clog << "Completed" << endl;
 	return 0;
 }

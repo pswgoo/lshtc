@@ -3,7 +3,7 @@
 include ../include_makefile/basic.mk
 include ../include_makefile/tools.mk
 
-# Project Name or Library Name 
+# Project Name or Library Name
 PRO_EXE := 
 PRO_LIB := $(BIN_DIR)$(notdir $(shell pwd)).a
 

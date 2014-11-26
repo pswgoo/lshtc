@@ -36,7 +36,7 @@ int CosineKnnPredict(std::string trainFile, std::string testFile, std::string ne
 
 	int numThreads = omp_get_num_procs();
 	clog << "CPU number: " << numThreads << endl;
-	omp_set_num_threads(numThreads / 2);
+	omp_set_num_threads(numThreads);
 
 	predctLabelScore.clear();
 	predctLabelScore.resize(testIds.size());

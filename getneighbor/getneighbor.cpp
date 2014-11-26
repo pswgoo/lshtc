@@ -143,11 +143,11 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 	return 0;
 }
 
-int FeatureNeighbor::GetNeighbor(int testID, int topK, std::vector<int>& neighborID)
+int FeatureNeighbor::GetNeighbor(int testID, int topK, std::vector<int>& neighborID) const
 {
 	neighborID.clear();
 	int temptestID = 0;
-	map<int, int>::iterator it = mTransID.find(testID);
+	map<int, int>::const_iterator it = mTransID.find(testID);
 	if (it == mTransID.end())
 	{
 		clog << "Can't find the testID!";
@@ -163,12 +163,12 @@ int FeatureNeighbor::GetNeighbor(int testID, int topK, std::vector<int>& neighbo
 	return 0;
 }
 
-int FeatureNeighbor::GetNeighbor(int testID, int topK, std::vector<int>& neighborID, std::vector<double>& neighborSimilarity)
+int FeatureNeighbor::GetNeighbor(int testID, int topK, std::vector<int>& neighborID, std::vector<double>& neighborSimilarity) const
 {
 	neighborID.clear();
 	neighborSimilarity.clear();
 	int temptestID = 0;
-	map<int, int>::iterator it = mTransID.find(testID);
+	map<int, int>::const_iterator it = mTransID.find(testID);
 	if (it == mTransID.end())
 	{
 		clog << "Can't find the testID!";
@@ -213,7 +213,7 @@ int FeatureNeighbor::LoadBin(std::string fileName, int printLog)
 	return 0;
 }
 
-int FeatureNeighbor::SaveBin(std::string fileName, int printLog)
+int FeatureNeighbor::SaveBin(std::string fileName, int printLog) const
 {
 	int rtn = 0;
 	FILE *outfile = fopen(fileName.c_str(), "wb");
