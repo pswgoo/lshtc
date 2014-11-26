@@ -1,8 +1,5 @@
 #include "common/common_basic.h"
-<<<<<<< HEAD
 #include "lshtc_lib/lshtc_data.h"
-=======
->>>>>>> 8a309bb5013a61720611ecbdef59305b9fc02724
 #include "extractfeature/feature.h"
 
 class MultinomialNaiveBayes

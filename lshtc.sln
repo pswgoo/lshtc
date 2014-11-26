@@ -410,7 +410,6 @@ Global
 		{C78C55E5-1D81-4772-ADBE-303F57450921}.Release|Win32.Build.0 = Release|Win32
 		{C78C55E5-1D81-4772-ADBE-303F57450921}.Release|x64.ActiveCfg = Release|x64
 		{C78C55E5-1D81-4772-ADBE-303F57450921}.Release|x64.Build.0 = Release|x64
-		{C78C55E5-1D81-4772-ADBE-303F57450921}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
