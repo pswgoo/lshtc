@@ -110,20 +110,26 @@ int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trai
 
 	mInstanceSize = (int)trainSet.size();
 	for (int i = 0; i < mInstanceSize; i++)
-	for (std::map<int, double>::const_iterator it = trainSet[i].begin(); it != trainSet[i].end(); ++it)
 	{
-		int tempFeature;
-		tempFeature = it->first;
-		std::map<int, int>::iterator iter;
-		iter = mTransFeatures.find(tempFeature);
-		if (iter == mTransFeatures.end())
+		for (std::map<int, double>::const_iterator it = trainSet[i].begin(); it != trainSet[i].end(); ++it)
 		{
-			mTransFeatures[tempFeature] = tempFeatureID++;
-			mAppearFeatures.push_back(1);
+			int tempFeature;
+			tempFeature = it->first;
+			std::map<int, int>::iterator iter;
+			iter = mTransFeatures.find(tempFeature);
+			if (iter == mTransFeatures.end())
+			{
+				mTransFeatures[tempFeature] = tempFeatureID++;
+				mAppearFeatures.push_back(1);
+			}
+			else
+				mAppearFeatures[iter->second]++;
 		}
-		else
-			mAppearFeatures[iter->second]++;
+		if (printLog != SILENT)
+			if (!((i + 1) & 131071)) printf("%d Instances Load Features\n", i);
 	}//get TransFeaturesID & AppearFeatures
+	if (printLog != SILENT)
+		printf("%d Instances Load Features\n", mInstanceSize);
 
 	for (int i = 0; i < mInstanceSize; i++)
 	{
@@ -141,7 +147,11 @@ int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trai
 			else
 				mAppearLabels[iter->second]++;
 		}
+		if (printLog != SILENT)
+			if (!((i + 1) & 131071)) printf("%d Instances Load Labels\n", i);
 	}//get TransLabelID & AppearLabels
+	if (printLog != SILENT)
+		printf("%d Instances Load Labels\n", mInstanceSize);
 
 	mPossiblity.resize(tempLabelID);
 	mLabelsWordCnt.resize(tempLabelID);
@@ -169,7 +179,11 @@ int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trai
 				mLabelsWordCnt[tempLabelID] += tempValue;
 			}
 		}
+		if (printLog != SILENT)
+			if (!((i + 1) & 131071)) printf("%d Instances To Count\n", i);
 	}//get Possiblity & InverseTable & LabelsWordCnt
+	if (printLog != SILENT)
+		printf("%d Instances To Count\n", mInstanceSize);
 	return 0;
 }
 
