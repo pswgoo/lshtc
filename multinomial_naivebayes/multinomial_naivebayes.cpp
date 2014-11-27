@@ -3,6 +3,7 @@
 #include <cmath>
 #include <queue>
 #include <functional>
+#include <algorithm>
 using namespace std;
 
 MultinomialNaiveBayes::MultinomialNaiveBayes()
@@ -250,7 +251,7 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<std:
 {
 	double Pm, Pmn;
 	std::vector<double> Wn;
-	std::set<int> labelList;
+	std::vector<int> labelList;
 	int featureSize;
 	typedef std::priority_queue<std::pair<double, int>, std::vector<std::pair<double, int> >, std::greater<std::pair<double, int>>> Priority_Queue;
 	Priority_Queue heap;
@@ -276,14 +277,20 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<std:
 		Wn.push_back(temp);//get Wn
 		
 		for (std::set<int>::iterator iter = mInverseTable[tempFeatureID].begin(); iter != mInverseTable[tempFeatureID].end(); ++iter)
-			labelList.insert(*iter);//get labelList
+		{
+			int tmp = *iter;
+			labelList.push_back(tmp);
+		}
 	}
 
 	int totFeatures = (int)mAppearFeatures.size();
-	for (std::set<int>::iterator it = labelList.begin(); it != labelList.end(); ++it)
+	int labelListSize = (int)labelList.size();
+	std::sort(labelList.begin(), labelList.end());
+	for (int i = 0; i < labelListSize; i++)
 	{
 		double temp = 0;
-		int tempLabel = *it;
+		if (i > 0 && labelList[i] == labelList[i - 1]) continue;
+		int tempLabel = labelList[i];
 		int tempLabelID = mTransLabels.find(tempLabel)->second;
 		Pm = log(double(mAppearLabels[tempLabelID]) / double(mInstanceSize));//get Pm
 		int featurePos = 0;
