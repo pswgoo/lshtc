@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "getneighbor_main", "getneig
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "multinomial_naivebayes", "multinomial_naivebayes\multinomial_naivebayes.vcxproj", "{C78C55E5-1D81-4772-ADBE-303F57450921}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_multibayes", "test_multibayes\test_multibayes.vcxproj", "{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -410,6 +412,22 @@ Global
 		{C78C55E5-1D81-4772-ADBE-303F57450921}.Release|Win32.Build.0 = Release|Win32
 		{C78C55E5-1D81-4772-ADBE-303F57450921}.Release|x64.ActiveCfg = Release|x64
 		{C78C55E5-1D81-4772-ADBE-303F57450921}.Release|x64.Build.0 = Release|x64
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Debug|Win32.Build.0 = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Debug|x64.ActiveCfg = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.MyDebug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.MyDebug|Mixed Platforms.Build.0 = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.MyDebug|Win32.ActiveCfg = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.MyDebug|Win32.Build.0 = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.MyDebug|x64.ActiveCfg = Debug|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Release|Win32.ActiveCfg = Release|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Release|Win32.Build.0 = Release|Win32
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Release|x64.ActiveCfg = Release|x64
+		{CE80F7BC-BAAD-43CC-8A88-07C063550CCD}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
