@@ -33,28 +33,28 @@ int MultinomialNaiveBayes::Load(std::string fileName, int printLog)
 	int rtn = 0;
 	FILE *infile = fopen(fileName.c_str(), "rb");
 
-	Read(infile, mInstanceSize);
+	rtn = Read(infile, mInstanceSize);
 	CHECK_RTN(rtn);
 
-	Read(infile, mAppearLabels);
+	rtn = Read(infile, mAppearLabels);
 	CHECK_RTN(rtn);
 
-	Read(infile, mAppearFeatures);
+	rtn = Read(infile, mAppearFeatures);
 	CHECK_RTN(rtn);
 
-	Read(infile, mTransLabels);
+	rtn = Read(infile, mTransLabels);
 	CHECK_RTN(rtn);
 
-	Read(infile, mTransFeatures);
+	rtn = Read(infile, mTransFeatures);
 	CHECK_RTN(rtn);
 
-	Read(infile, mPossiblity);
+	rtn = Read(infile, mPossiblity);
 	CHECK_RTN(rtn);
 
-	Read(infile, mInverseTable);
+	rtn = Read(infile, mInverseTable);
 	CHECK_RTN(rtn);
 
-	Read(infile, mLabelsWordCnt);
+	rtn = Read(infile, mLabelsWordCnt);
 	CHECK_RTN(rtn);
 
 	fclose(infile);
@@ -70,28 +70,28 @@ int MultinomialNaiveBayes::Save(std::string fileName, int printLog)
 	int rtn = 0;
 	FILE *outfile = fopen(fileName.c_str(), "wb");
 
-	Write(outfile, mInstanceSize);
+	rtn = Write(outfile, mInstanceSize);
 	CHECK_RTN(rtn);
 
-	Write(outfile, mAppearLabels);
+	rtn = Write(outfile, mAppearLabels);
 	CHECK_RTN(rtn);
 
-	Write(outfile, mAppearFeatures);
+	rtn = Write(outfile, mAppearFeatures);
 	CHECK_RTN(rtn);
 
-	Write(outfile, mTransLabels);
+	rtn = Write(outfile, mTransLabels);
 	CHECK_RTN(rtn);
 
-	Write(outfile, mTransFeatures);
+	rtn = Write(outfile, mTransFeatures);
 	CHECK_RTN(rtn);
 
-	Write(outfile, mPossiblity);
+	rtn = Write(outfile, mPossiblity);
 	CHECK_RTN(rtn);
 
-	Write(outfile, mInverseTable);
+	rtn = Write(outfile, mInverseTable);
 	CHECK_RTN(rtn);
 
-	Write(outfile, mLabelsWordCnt);
+	rtn = Write(outfile, mLabelsWordCnt);
 	CHECK_RTN(rtn);
 	
 	fclose(outfile);
