@@ -12,7 +12,8 @@ public:
 	std::vector<int> mAppearFeatures;
 	std::map<int, int> mTransLabels;//trans to 0..M-1
 	std::map<int, int> mTransFeatures;//trans to 0..N-1
-	std::vector<std::map<int, int> > mPossiblity;//label<feature, Appear>
+	//std::vector<std::map<int, int> > mPossiblity;//label<feature, Appear>
+	std::vector<std::vector<std::pair<int, int>>> mPossiblity;//label<feature, Appear>
 	std::vector<std::set<int> >	mInverseTable;   //token<label1,label2,...> 倒排表，记录每个token在哪些label的样本中出现过
 
 public:

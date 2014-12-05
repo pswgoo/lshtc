@@ -93,7 +93,7 @@ int MultinomialNaiveBayes::Save(std::string fileName, int printLog)
 
 	rtn = Write(outfile, mLabelsWordCnt);
 	CHECK_RTN(rtn);
-	
+
 	fclose(outfile);
 
 	if (printLog != SILENT)
@@ -126,7 +126,7 @@ int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trai
 				mAppearFeatures[iter->second]++;
 		}
 		if (printLog != SILENT)
-			if (!((i + 1) & 131071)) printf("%d Instances Load Features\n", i);
+		if (!((i + 1) & 131071)) printf("%d Instances Load Features\n", i);
 	}//get TransFeaturesID & AppearFeatures
 	if (printLog != SILENT)
 		printf("%d Instances Load Features\n", mInstanceSize);
@@ -148,12 +148,13 @@ int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trai
 				mAppearLabels[iter->second]++;
 		}
 		if (printLog != SILENT)
-			if (!((i + 1) & 131071)) printf("%d Instances Load Labels\n", i);
+		if (!((i + 1) & 131071)) printf("%d Instances Load Labels\n", i);
 	}//get TransLabelID & AppearLabels
 	if (printLog != SILENT)
 		printf("%d Instances Load Labels\n", mInstanceSize);
 
-	mPossiblity.resize(tempLabelID);
+	std::vector<std::map<int, int> > tempPossibility;;
+	tempPossibility.resize(tempLabelID);
 	mLabelsWordCnt.resize(tempLabelID);
 	mInverseTable.resize(tempFeatureID);
 	for (int i = 0; i < mInstanceSize; i++)
@@ -169,50 +170,71 @@ int MultinomialNaiveBayes::Build(const std::vector<std::map<int, double> >& trai
 				int tempValue = (int)it->second;
 				int tempFeatureID = mTransFeatures.find(tempFeature)->second;
 				std::map<int, int>::iterator iter;
-				iter = mPossiblity[tempLabelID].find(tempFeature);
-				if (iter == mPossiblity[tempLabelID].end())
-					mPossiblity[tempLabelID][tempFeature] = tempValue;
+				iter = tempPossibility[tempLabelID].find(tempFeatureID);
+				if (iter == tempPossibility[tempLabelID].end())
+					tempPossibility[tempLabelID][tempFeatureID] = tempValue;
 				else
-					mPossiblity[tempLabelID][tempFeature] += tempValue;
+					tempPossibility[tempLabelID][tempFeatureID] += tempValue;
 
 				mInverseTable[tempFeatureID].insert(tempLabel);
 				mLabelsWordCnt[tempLabelID] += tempValue;
 			}
 		}
 		if (printLog != SILENT)
-			if (!((i + 1) & 131071)) printf("%d Instances To Count\n", i);
-	}//get Possiblity & InverseTable & LabelsWordCnt
+		if (!((i + 1) & 131071)) printf("%d Instances To Count\n", i);
+	}//get tempPossiblity & InverseTable & LabelsWordCnt
+
 	if (printLog != SILENT)
 		printf("%d Instances To Count\n", mInstanceSize);
+
+	mPossiblity.resize(tempLabelID);
+	for (int i = 0; i < tempLabelID; i++)
+		for (std::map<int, int>::iterator it = tempPossibility[i].begin(); it != tempPossibility[i].end(); ++it)
+			mPossiblity[i].push_back(*it);//get Possiblity
+
+	if (printLog != SILENT)
+		printf("Get Possiblity!\n");
+
 	return 0;
 }
 
 int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<int>& labelID, int topK)
 {
 	double Pm, Pmn;
+	int featureSize;
 	std::vector<double> Wn;
 	std::vector<int> labelList;
-	int featureSize;
+	std::vector<std::pair<int, double> > featureList;
 	typedef std::priority_queue<std::pair<double, int>, std::vector<std::pair<double, int> >, std::greater<std::pair<double, int>>> Priority_Queue;
 	Priority_Queue heap;
 
-	featureSize = 0;
+	featureList.clear();
 	Wn.clear();
 	labelList.clear();
 	labelID.clear();
 
 	for (Feature::const_iterator it = testInstance.begin(); it != testInstance.end(); ++it)
-		if (it->second > 1e-6)
-			featureSize++;//get S(Wu)
-
-	for (Feature::const_iterator it = testInstance.begin(); it != testInstance.end(); ++it)
+	if (it->second > 1e-6)
 	{
-		if (mTransFeatures.find(it->first) == mTransFeatures.end())
-			continue;//valid
-		double temp = 0;
+		if (mTransFeatures.find(it->first) == mTransFeatures.end()) continue;
 		int tempFeatureID = mTransFeatures.find(it->first)->second;
+		featureList.push_back(std::make_pair(tempFeatureID, it->second));
+	}
+	featureSize = featureList.size();//get S(Wu) & get featureList/featureValue
+	std::sort(featureList.begin(), featureList.end());
+
+	if (!featureSize)
+	{
+		clog << "Don't exist valid feature!" << endl;
+		return 1;
+	}
+
+	for (int i = 0; i < featureSize; i++)
+	{
+		double temp = 0;
+		int tempFeatureID = featureList[i].first;
 		temp = log(std::max(1.0, double(mInstanceSize) / double(mAppearFeatures[tempFeatureID]) - 1.0));//log[max(1,D/Dn-1)]
-		temp *= log(1. + it->second);
+		temp *= log(1. + featureList[i].second);
 		temp /= featureSize;//log[1+Wnu]/S(Wu)
 		Wn.push_back(temp);//get Wn
 
@@ -234,16 +256,24 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<int>
 		int tempLabelID = mTransLabels.find(tempLabel)->second;
 		Pm = log(double(mAppearLabels[tempLabelID]) / double(mInstanceSize));//get Pm
 		int featurePos = 0;
-		for (Feature::const_iterator iter = testInstance.begin(); iter != testInstance.end(); ++iter)
+		int possiblityPos = 0;
+		while (featurePos < featureSize)
 		{
-			int tempFeature = iter->first;
-			if (mTransFeatures.find(tempFeature) == mTransFeatures.end())
-				continue;//valid
-			if (mPossiblity[tempLabelID].find(tempFeature) != mPossiblity[tempLabelID].end())//get Pmn
-				Pmn = (1.0 + 1.0 * mPossiblity[tempLabelID].find(tempFeature)->second) / (mLabelsWordCnt[tempLabelID] + totFeatures);
-			else
+			if (possiblityPos >= mPossiblity[tempLabelID].size() || featureList[featurePos].first < mPossiblity[tempLabelID][possiblityPos].first)
+			{
 				Pmn = 1.0 / (mLabelsWordCnt[tempLabelID] + totFeatures);
-			temp += Wn[featurePos++] * log(Pmn);//log(Pmn ^ Wn)
+				temp += Wn[featurePos] * log(Pmn);//log(Pmn ^ Wn)
+				featurePos++;
+			}
+			else if (featureList[featurePos].first > mPossiblity[tempLabelID][possiblityPos].first)
+				possiblityPos++;
+			else
+			{
+				Pmn = (1.0 + 1.0 * mPossiblity[tempLabelID][possiblityPos].second) / (mLabelsWordCnt[tempLabelID] + totFeatures);
+				temp += Wn[featurePos] * log(Pmn);//log(Pmn ^ Wn)
+				featurePos++;
+				possiblityPos++;
+			}
 		}
 		temp += Pm;//get Pwm
 
@@ -270,32 +300,43 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<int>
 int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<std::pair<int, double> >& labelScore, int topK)
 {
 	double Pm, Pmn;
+	int featureSize;
 	std::vector<double> Wn;
 	std::vector<int> labelList;
-	int featureSize;
+	std::vector<std::pair<int, double> > featureList;
 	typedef std::priority_queue<std::pair<double, int>, std::vector<std::pair<double, int> >, std::greater<std::pair<double, int>>> Priority_Queue;
 	Priority_Queue heap;
 
-	featureSize = 0;
+	featureList.clear();
 	Wn.clear();
 	labelList.clear();
 	labelScore.clear();
 
 	for (Feature::const_iterator it = testInstance.begin(); it != testInstance.end(); ++it)
-		if (it->second > 1e-6)
-			featureSize++;//get S(Wu)
-
-	for (Feature::const_iterator it = testInstance.begin(); it != testInstance.end(); ++it)
+	if (it->second > 1e-6)
 	{
-		if (mTransFeatures.find(it->first) == mTransFeatures.end())
-			continue;//valid
+		if (mTransFeatures.find(it->first) == mTransFeatures.end()) continue;
 		int tempFeatureID = mTransFeatures.find(it->first)->second;
+		featureList.push_back(std::make_pair(tempFeatureID, it->second));
+	}
+	featureSize = featureList.size();//get S(Wu) & get featureList/featureValue
+	std::sort(featureList.begin(), featureList.end());
+
+	if (!featureSize)
+	{
+		clog << "Don't exist valid feature!" << endl;
+		return 1;
+	}
+
+	for (int i = 0; i < featureSize; i++)
+	{
 		double temp = 0;
+		int tempFeatureID = featureList[i].first;
 		temp = log(std::max(1.0, double(mInstanceSize) / double(mAppearFeatures[tempFeatureID]) - 1.0));//log[max(1,D/Dn-1)]
-		temp *= log(1 + it->second);
+		temp *= log(1. + featureList[i].second);
 		temp /= featureSize;//log[1+Wnu]/S(Wu)
 		Wn.push_back(temp);//get Wn
-		
+
 		for (std::set<int>::iterator iter = mInverseTable[tempFeatureID].begin(); iter != mInverseTable[tempFeatureID].end(); ++iter)
 		{
 			int tmp = *iter;
@@ -314,16 +355,24 @@ int MultinomialNaiveBayes::Predict(const Feature& testInstance, std::vector<std:
 		int tempLabelID = mTransLabels.find(tempLabel)->second;
 		Pm = log(double(mAppearLabels[tempLabelID]) / double(mInstanceSize));//get Pm
 		int featurePos = 0;
-		for (Feature::const_iterator iter = testInstance.begin(); iter != testInstance.end(); ++iter)
+		int possiblityPos = 0;
+		while (featurePos < featureSize)
 		{
-			int tempFeature = iter->first;
-			if (mTransFeatures.find(tempFeature) == mTransFeatures.end())
-				continue;//valid
-			if (mPossiblity[tempLabelID].find(tempFeature) != mPossiblity[tempLabelID].end())//get Pmn
-				Pmn = (1.0 + 1.0 * mPossiblity[tempLabelID].find(tempFeature)->second) / (mLabelsWordCnt[tempLabelID] + totFeatures);
-			else
+			if (possiblityPos >= mPossiblity[tempLabelID].size() || featureList[featurePos].first < mPossiblity[tempLabelID][possiblityPos].first)
+			{
 				Pmn = 1.0 / (mLabelsWordCnt[tempLabelID] + totFeatures);
-			temp += Wn[featurePos++] * log(Pmn);//log(Pmn ^ Wn)
+				temp += Wn[featurePos] * log(Pmn);//log(Pmn ^ Wn)
+				featurePos++;
+			}
+			else if (featureList[featurePos].first > mPossiblity[tempLabelID][possiblityPos].first)
+				possiblityPos++;
+			else
+			{
+				Pmn = (1.0 + 1.0 * mPossiblity[tempLabelID][possiblityPos].second) / (mLabelsWordCnt[tempLabelID] + totFeatures);
+				temp += Wn[featurePos] * log(Pmn);//log(Pmn ^ Wn)
+				featurePos++;
+				possiblityPos++;
+			}
 		}
 		temp += Pm;//get Pwm
 

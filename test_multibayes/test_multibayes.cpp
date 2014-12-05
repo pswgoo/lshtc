@@ -2,12 +2,12 @@
 #include "lshtc_lib/lshtc_data.h"
 using namespace std;
 
-int LoadTrainSetLabels(string fileName, vector<vector<int> >& trainSetLabels, int printLog)
+int LoadLabels(string fileName, vector<vector<int> >& labelSet, int printLog)
 {
 	int rtn = 0;
 	FILE *infile = fopen(fileName.c_str(), "rb");
 
-	rtn = Read(infile, trainSetLabels);
+	rtn = Read(infile, labelSet);
 	CHECK_RTN(rtn);
 
 	fclose(infile);
@@ -16,12 +16,12 @@ int LoadTrainSetLabels(string fileName, vector<vector<int> >& trainSetLabels, in
 	return 0;
 }
 
-int LoadTrainSetFeatures(string fileName, vector<std::map<int, double> >& trainSetFeatures, int printLog)
+int LoadFeatures(string fileName, vector<std::map<int, double> >& FeatureSet, int printLog)
 {
 	int rtn = 0;
 	FILE *infile = fopen(fileName.c_str(), "rb");
 
-	rtn = Read(infile, trainSetFeatures);
+	rtn = Read(infile, FeatureSet);
 	CHECK_RTN(rtn);
 
 	fclose(infile);
@@ -30,12 +30,12 @@ int LoadTrainSetFeatures(string fileName, vector<std::map<int, double> >& trainS
 	return 0;
 }
 
-int SaveTrainSetLabels(string fileName, vector<vector<int> >& trainSetLabels, int printLog)
+int SaveLabels(string fileName, vector<vector<int> >& labelSet, int printLog)
 {
 	int rtn = 0;
 	FILE *outfile = fopen(fileName.c_str(), "wb");
 
-	rtn = Write(outfile, trainSetLabels);
+	rtn = Write(outfile, labelSet);
 	CHECK_RTN(rtn);
 	
 	fclose(outfile);
@@ -44,12 +44,12 @@ int SaveTrainSetLabels(string fileName, vector<vector<int> >& trainSetLabels, in
 	return 0;
 }
 
-int SaveTrainSetFeatures(string fileName, vector<std::map<int, double> >& trainSetFeatures, int printLog)
+int SaveFeatures(string fileName, vector<std::map<int, double> >& FeatureSet, int printLog)
 {
 	int rtn = 0;
 	FILE *outfile = fopen(fileName.c_str(), "wb");
 
-	rtn = Write(outfile, trainSetFeatures);
+	rtn = Write(outfile, FeatureSet);
 	CHECK_RTN(rtn);
 
 	fclose(outfile);
@@ -68,43 +68,63 @@ int main()
 	rtn = trainLhtcSet.LoadBin("F:\\lshtc\\data\\loc_train.bin", 1);
 	CHECK_RTN(rtn);*/
 
-	//rtn = testLhtcSet.LoadBin("F:\\lshtc\\data\\loc_test_merge01.bin", 1);
-	//CHECK_RTN(rtn);
+	/*rtn = testLhtcSet.LoadBin("F:\\lshtc\\data\\loc_test_merge01.bin", 1);
+	CHECK_RTN(rtn);*/
 
 	vector<map<int, double> > trainSet;
+	vector<map<int, double> > testSet;
 	vector<vector<int> > trainLabels;
+	vector<vector<int> > testLabels;
 	trainLabels.clear();
 	trainSet.clear();
+	testLabels.clear();
+	testSet.clear();
 
-	for (map<int, LhtcDocument>::iterator it = trainLhtcSet.mLhtcDocuments.begin(); it != trainLhtcSet.mLhtcDocuments.end(); ++it)
+	/*for (map<int, LhtcDocument>::iterator it = trainLhtcSet.mLhtcDocuments.begin(); it != trainLhtcSet.mLhtcDocuments.end(); ++it)
 	{
 		trainSet.push_back(it->second.mTf);
 		trainLabels.push_back(it->second.mLabels);
-	}//Deal trainSet
+	}//Deal trainSet*/
 
-	rtn = SaveTrainSetLabels("loc_trainset_labels.bin", trainLabels, 1);
+	/*for (map<int, LhtcDocument>::iterator it = testLhtcSet.mLhtcDocuments.begin(); it != testLhtcSet.mLhtcDocuments.end(); ++it)
+	{
+		testSet.push_back(it->second.mTf);
+		testLabels.push_back(it->second.mLabels);
+	}//Deal testSet*/
+
+	/*rtn = SaveLabels("loc_trainset_labels.bin", trainLabels, 1);
 	CHECK_RTN(rtn);
 	
-	rtn = SaveTrainSetFeatures("loc_trainset_features.bin", trainSet, 1);
+	rtn = SaveFeatures("loc_trainset_features.bin", trainSet, 1);
+	CHECK_RTN(rtn);*/
+
+	/*rtn = LoadLabels("loc_trainset_labels.bin", trainLabels, 1);
 	CHECK_RTN(rtn);
 
-	rtn = LoadTrainSetLabels("loc_trainset_labels.bin", trainLabels, 1);
+	rtn = LoadFeatures("loc_trainset_features.bin", trainSet, 1);
+	CHECK_RTN(rtn);*/
+
+	/*rtn = SaveLabels("loc_testset_labels.bin", testLabels, 1);
 	CHECK_RTN(rtn);
 
-	rtn = LoadTrainSetFeatures("loc_trainset_features.bin", trainSet, 1);
+	rtn = SaveFeatures("loc_testset_features.bin", testSet, 1);
+	CHECK_RTN(rtn);*/
+
+	rtn = LoadLabels("loc_testset_labels.bin", testLabels, 1);
 	CHECK_RTN(rtn);
 
-	printf("%d %d\n", trainLabels.size(), trainLabels[0].size());
+	rtn = LoadFeatures("loc_testset_features.bin", testSet, 1);
+	CHECK_RTN(rtn);
 
-	//printf("%d\n", clock());
+	/*printf("%d %d\n", clock(), trainLabels.size());
 	rtn = testMultinomial.Build(trainSet, trainLabels, 1);
 	CHECK_RTN(rtn);
-	//printf("%d\n", clock());
+	printf("%d\n", clock());
 
-	rtn = testMultinomial.Save("Bayes_train_model.bin", 1);
-	CHECK_RTN(rtn);
+	rtn = testMultinomial.Save("Bayes_train_model_new.bin", 1);
+	CHECK_RTN(rtn);*/
 
-	rtn = testMultinomial.Load("Bayes_train_model.bin", 1);
+	rtn = testMultinomial.Load("Bayes_train_model_new.bin", 1);
 	CHECK_RTN(rtn);
 
 	//rtn = testMultinomial.Save("Bayes_train_model_tmp.bin", 1);
@@ -116,14 +136,12 @@ int main()
 	vector<vector<int> > answerLabel;
 	vector<vector<pair<int, double>>> labelScore;
 	int cntTime = clock();
-	int cnt = min(30, testLhtcSet.Size());
+	int cnt = min(30, (int)testLabels.size());
 	labelID.clear();
-	labelID.resize(cnt);
 	labelScore.clear();
+	labelID.resize(cnt);
 	labelScore.resize(cnt);
 	answerLabel.resize(cnt);
-
-	map<int, LhtcDocument>::iterator it = testLhtcSet.mLhtcDocuments.begin();
 
 	int numThreads = omp_get_num_procs();
 	clog << "CPU number: " << numThreads << endl;
@@ -131,33 +149,44 @@ int main()
 	clog << "Start Parallel Extract Features" << endl;
 #pragma omp parallel for schedule(dynamic)
 	for (int i = 0; i < cnt; i++)
-	{
-		++it;
-		rtn = testMultinomial.Predict((it->second).mTf, labelScore[i], 10);
-	}
+		rtn = testMultinomial.Predict(testSet[i], labelScore[i], 10);
 
 	/*for (int i = 0; i < cnt; i++)
 	{
-		printf("%d\n", i);
+		printf("\n%d\n", i);
 		for (int j = 0; j < labelID[i].size(); j++) printf("%d ", labelID[i][j]);
 	}*/
 
-	it = testLhtcSet.mLhtcDocuments.begin();
 	FILE* outfile = fopen("test.txt", "w");
 	for (int i = 0; i < cnt; i++)
 	{
 		fprintf(outfile, "%d\n", i);
-		for (int j = 0; j < labelScore[i].size(); j++) fprintf(outfile, "%d %lf\n", labelScore[i][j].first, labelScore[i][j].second);
-		++it;
-		for (int j = 0; j < it->second.mLabels.size(); j++)
-			fprintf(outfile, "%d ", it->second.mLabels[j]);
+		for (int j = 0; j < labelScore[i].size(); j++)
+			fprintf(outfile, "%d %lf\n", labelScore[i][j].first, labelScore[i][j].second);
+		for (int j = 0; j < testLabels[i].size(); j++)
+			fprintf(outfile, "%d ", testLabels[i][j]);
 		fprintf(outfile, "\n");
-		for (map<int, double>::iterator iter = it->second.mTf.begin(); iter != it->second.mTf.end(); ++iter)
-			fprintf(outfile, "%d %lf\n", iter->first, iter->second);
+		//for (map<int, double>::iterator iter = testSet[i].begin(); iter != testSet[i].end(); ++iter)
+			//fprintf(outfile, "%d %lf\n", iter->first, iter->second);
 	}
 	fclose(outfile);
 
 	printf("%d\n", clock() - cntTime);
+
+	/*if (labelScore[0].size() > 0)//get answerLabel
+	{
+		for (int i = 0; i < cnt; i++)
+			for (int j = 0; j < labelScore[i].size(); j++)
+				answerLabel[i].push_back(labelScore[i][j].first);
+	}
+	else
+	{
+		for (int i = 0; i < cnt; i++)
+			answerLabel[i] = labelID[i];
+	}*/
+	//rtn = SaveLabels("loc_answer_labels.bin", answerLabel, 1);
+	//CHECK_RTN(rtn);
+
 	system("pause");
 	return 0;
 }
