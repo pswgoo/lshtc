@@ -7,7 +7,6 @@
 
 class FeatureNeighbor
 {
-
 public:
 	static int Max_Remain_Neighbor;
 	std::map<int, int> mTransID;

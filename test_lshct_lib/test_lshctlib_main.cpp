@@ -254,11 +254,86 @@ int SaveScoreTableDataSet()
 	return 0;
 }
 
+int SaveLastestCitation()
+{
+	int rtn = 0;
+	MeshRecordSet mesh_set;
+	mesh_set.Load("desc2014.bin");
+	CitationSet citations;
+	clog << "Loading Predicting Citations" << endl;
+	rtn = citations.Load("citations_year2013.bin", STATUS_ONLY);
+	CHECK_RTN(rtn);
+
+	clog << "Loading Tokenization Result" << endl;
+	TokenCitationSet tokenCitations;
+	rtn = tokenCitations.LoadDictionary("dictionary(4.03).bin", STATUS_ONLY);
+	CHECK_RTN(rtn);
+
+	rtn = tokenCitations.Load("token_citations_year2013(4.03).bin", STATUS_ONLY);
+	CHECK_RTN(rtn);
+
+	clog << "Load Unigram Dictionary" << endl;
+	UniGramFeature uniGrams;
+	rtn = uniGrams.Load("unigramfeature(4.03).bin");
+	CHECK_RTN(rtn);
+	clog << "Total " << uniGrams.mDictionary.size() << " unigrams" << endl;
+
+	clog << "Prepare for Extract Features" << endl;
+	FeatureSet uni;
+	uni.mMaxIndex = uniGrams.mDictionary.rbegin()->first + 1;
+	uni.mFeatures.resize(tokenCitations.Size());
+
+	vector<TokenCitation*> tokenCitationVector;
+	tokenCitationVector.reserve(tokenCitations.Size());
+	for (map<int, TokenCitation*>::iterator it = tokenCitations.mTokenCitations.begin(); it != tokenCitations.mTokenCitations.end(); it++)
+	{
+		tokenCitationVector.push_back(it->second);
+	}
+	vector<Citation*> citationVector;
+	citationVector.reserve(citations.Size());
+	for (map<int, Citation*>::iterator it = citations.mCitations.begin(); it != citations.mCitations.end(); it++)
+	{
+		citationVector.push_back(it->second);
+	}
+
+	int numThreads = omp_get_num_procs();
+	clog << "CPU number: " << numThreads << endl;
+
+	omp_set_num_threads(numThreads);
+	clog << "Start Parallel Extract Features" << endl;
+#pragma omp parallel for schedule(dynamic) 
+	for (int i = 0; i < (int)tokenCitationVector.size(); i++)
+	{
+		uniGrams.Extract(*tokenCitationVector[i], uni.mFeatures[i]);
+	}
+	rtn = uni.Normalize();
+	CHECK_RTN(rtn);
+
+	clog << "Save feature" << endl;
+	LhtcDocumentSet doc_set;
+	int cur = 0;
+	for (map<int, Citation*>::iterator it = citations.mCitations.begin(); it != citations.mCitations.end(); it++, ++cur)
+	{
+		doc_set.mLhtcDocuments[it->first].mTf = uni[cur];
+		vector<int> labels;
+		for (int i = 0; i < it->second->mNumberMesh; ++i)
+		{
+			labels.push_back(mesh_set[it->second->mMeshHeadingList[i].mDescriptorName.mText]->mUid);
+		}
+		doc_set.mLhtcDocuments[it->first].mLabels = labels;
+	}
+	rtn = doc_set.Save("uni_feature_year2013.svm", FULL_LOG);
+	CHECK_RTN(rtn);
+	clog << "Complete" << endl;
+	return 0;
+}
+
 int main()
 {
 	int rtn = 0;
 	//rtn = SplitTrainSet();
-	rtn = SaveScoreTableDataSet();
+	//rtn = SaveScoreTableDataSet();
+	rtn = SaveLastestCitation();
 	CHECK_RTN(rtn);
 	clog << "Complete" << endl;
 	//system("pause");

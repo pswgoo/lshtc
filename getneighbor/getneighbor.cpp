@@ -119,6 +119,8 @@ int FeatureNeighbor::Build(std::vector<std::map<int, double> > trainset, std::ve
 		double tempcalc;
 		for (int j = 0; j < trainsetsize; j++)
 		{
+			if (testsetID[i] == trainsetID[j])
+				continue;
 			tempcalc = CalcSimilarity(trainset[j], testset[i]);//calc
 			if (heap.size() < Max_Remain_Neighbor || heap.top().first < tempcalc)
 			{

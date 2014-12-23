@@ -31,7 +31,7 @@ public:
 	LhtcDocumentSet();
 	~LhtcDocumentSet();
 
-	LhtcDocument operator[](int index);
+	LhtcDocument& operator[](int index);
 
 	int Size();
 

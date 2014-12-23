@@ -82,7 +82,7 @@ int LhtcDocument::Save(FILE* outfile)
 	fprintf(outfile, "%d", mLabels[labelSize - 1]);
 
 	for (iterTF = mTf.begin(); iterTF != mTf.end(); ++iterTF)
-		fprintf(outfile, " %d:%d", iterTF->first, int(iterTF->second));
+		fprintf(outfile, " %d:%lf", iterTF->first, iterTF->second);
 	fprintf(outfile, "\n");
 	return 0;
 }
@@ -126,7 +126,7 @@ LhtcDocumentSet::~LhtcDocumentSet()
 
 }
 
-LhtcDocument LhtcDocumentSet::operator[](int index)
+LhtcDocument& LhtcDocumentSet::operator[](int index)
 {
 	return mLhtcDocuments[index];
 }
